@@ -1,1 +1,3 @@
 This is a text file used to manage the conflicts between branches in a repository of Github. 
+
+- This is the first modification to the text file in the conflictBranch.
