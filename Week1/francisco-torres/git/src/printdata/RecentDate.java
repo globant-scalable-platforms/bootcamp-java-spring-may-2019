@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class RecentDate {
 	public static void main(String[] args) {
-		DateTimeFormatter formatRecentDate = DateTimeFormatter.ISO_DATE;
+		DateTimeFormatter formatRecentDate = DateTimeFormatter.ofPattern("MMMM dd yyyy");
 		
 		System.out.print("Date: " + LocalDate.now().format(formatRecentDate));
 	}
