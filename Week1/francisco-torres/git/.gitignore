@@ -1,0 +1,4 @@
+# update only java and git files
+*.*
+!*.java
+!*.gitignore
