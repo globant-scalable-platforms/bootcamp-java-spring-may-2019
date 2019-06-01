@@ -36,4 +36,23 @@ Similarly to the last experiment, 1.000.000 strings were generated randomly to b
 | 8    |33.696515|1279.519469|
 | 9    |31.764064|1154.823406|
 
-As it was mentioned before a TreeMap is backed by a Binary Search Tree, searching an element requires O(log n), where _n_ is the amount of elements in the tree. On the other hand, according to the Java Documentation the HashMap _get_ function is constant in time.  
+As it was mentioned before a TreeMap is backed by a Binary Search Tree, searching an element requires O(log n), where _n_ is the amount of elements in the tree. On the other hand, according to the Java Documentation the HashMap _get_ function is constant in time. 
+
+## Remove elements by key
+
+For this experiment 1.000.000 keys were generated and introduced in the map. Afterwards all the elements in the maps were removed using the keys. These are the results:
+
+| Run  | ArrayList | LinkedList |
+| :--: | :-------: | :--------: |
+| 0    |60.149098|1136.488547|
+| 1    |44.960658|1160.109012|
+| 2    |49.539651|1194.807576|
+| 3    |68.288028|1330.814803|
+| 4    |47.335039|1167.524894|
+| 5    |59.836407|1238.413408|
+| 6    |51.042851|1327.618401|
+| 7    |56.584104|1037.606952|
+| 8    |43.861816|1177.501573|
+| 9    |55.014767|1238.421147|
+
+As in the previous experiments, the fact that the TreeMap is backed by a BinarySearchTree makes the runtime more expensive. In this case, everytime a deletion has to be made, it is required to find the node, delete it and balance the tree, which ends up being an expensive operation to perform. 
