@@ -33,5 +33,12 @@ run{
     standardInput = System.in
 }
 
+// task to create the fat jar
+jar {
+    manifest {
+        attributes 'Main-Class': 'dateconverter.DateConverter'
+    }
+}
+
 // Define the main class for the application
 mainClassName = 'dateconverter.DateConverter'
