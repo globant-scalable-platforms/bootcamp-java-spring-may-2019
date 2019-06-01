@@ -1,0 +1,144 @@
+
+D:\git-test>git log
+commit 9164b46d2ddac9d3a08c1ba75365b7e61d4d6cb2 (HEAD -> master, secondbranch, bootcamp)
+Author: ingjuanmolina <ing.jcmolina@gmail.com>
+Date:   Thu May 30 20:20:29 2019 -0500
+
+    First commit
+
+D:\git-test>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conflict.txt
+
+
+D:\git-test>add conflict.txt
+"add" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\git-test>git add conflict.txt
+
+D:\git-test>git commit -m "Added conflict file"
+[master 0cffca1] Added conflict file
+ 2 files changed, 2 insertions(+)
+ create mode 100644 conflict.txt
+ create mode 100644 test.txt
+
+D:\git-test>git checkout bootcamp
+error: Your local changes to the following files would be overwritten by checkout:
+        conflict.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+D:\git-test>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   conflict.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\git-test>git add conflict.txt
+
+D:\git-test>git commit -m "Conflict file modified from master"
+[master c1aebf1] Conflict file modified from master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\git-test>git checkout bootcamp
+Switched to branch 'bootcamp'
+
+D:\git-test>git status
+On branch bootcamp
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conflict.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git-test>git add conflict.txt
+
+D:\git-test>git commit -m "Conflict file modified from bootcamp"
+[bootcamp d40b930] Conflict file modified from bootcamp
+ 1 file changed, 1 insertion(+)
+ create mode 100644 conflict.txt
+
+D:\git-test>git checkout secondbranch
+Switched to branch 'secondbranch'
+
+D:\git-test>git status
+On branch secondbranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        conflict.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git-test>git add conflict.txt
+
+D:\git-test>git commit -m "Conflict file modified from secondbranch"
+[secondbranch 0a80b78] Conflict file modified from secondbranch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 conflict.txt
+
+D:\git-test>git checkout master
+Switched to branch 'master'
+
+D:\git-test>git merge bootcamp
+CONFLICT (add/add): Merge conflict in conflict.txt
+Auto-merging conflict.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+D:\git-test>git difftool
+diff --cc conflict.txt
+index ee38d37,6a19a34..0000000
+--- a/conflict.txt
++++ b/conflict.txt
+@@@ -1,1 -1,1 +1,5 @@@
+- Text Source: Bootcamp
+ -Text Source: bootcamp branch
+++<<<<<<< HEAD
+++Text Source: Bootcamp
+++=======
+++Text Source: bootcamp branch
+++>>>>>>> bootcamp
+
+D:\git-test>git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both added:      conflict.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\git-test>git add conflict.txt
+
+D:\git-test>git add conflict-message.txt
+
+D:\git-test>git commit -m "Conflict solved"
+[master deed941] Conflict solved
+
+D:\git-test>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\git-test>https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595
+"https:" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\git-test>
