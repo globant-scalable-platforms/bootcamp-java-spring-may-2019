@@ -77,3 +77,22 @@ For this experiment the ArrayList and LinkedList iterators were used. The experi
 
 In general, for collections with sequential access, such as a LinkedList, tend to perform slower than the random access ones, as an ArrayList. 
 Another reason, is that in general is it faster due to the fact that in the back, the ArrayList is implemented using an array.
+
+## Sorting
+
+The sorting was performed for 10.000.000 randomly generated numbers. The sorting was done using the function provided by the Collections Class, in which a MergeSort is performed using the natural ordering. These are the results:
+
+| Run  | ArrayList | LinkedList |
+| :--: | :-------: | :--------: |
+| 0    |6531.269205|4902.722325|
+| 1    |4706.457528|4921.242176|
+| 2    |5189.606816|5469.631491|
+| 3    |4949.03243|5341.894295|
+| 4    |4626.303267|5577.713467|
+| 5    |4614.749448|5475.884259|
+| 6    |4624.72914|6516.983407|
+| 7    |7137.413275|7271.115957|
+| 8    |6230.675212|6103.458672|
+| 9    |4739.822583|6032.630484|
+
+In most of the runs, the performance was slightly better in the ArrayList.
