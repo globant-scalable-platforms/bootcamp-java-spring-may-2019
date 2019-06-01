@@ -38,6 +38,10 @@ jar {
     manifest {
         attributes 'Main-Class': 'dateconverter.DateConverter'
     }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
 
 // Define the main class for the application
