@@ -4,7 +4,7 @@
 
 For this experiment 1.000.000 strings were generated randomly to be used as keys to be inserted in the map, using the UUID class. These are results: 
 
-| Run  | ArrayList | LinkedList |
+| Run  | HashMap | TreeMap |
 | :--: | :-------: | :--------: |
 | 0    |233.02227|1359.720042|
 | 1    |232.838966|1546.420989|
@@ -23,7 +23,7 @@ The times are considerably greater when inserting in the TreeMap, the main reaso
 
 Similarly to the last experiment, 1.000.000 strings were generated randomly to be used as keys to be inserted in the map, afterwards a _get_ operation with these keys was performed, in order to know the runtime of retrieving the elements. These are the results:
 
-| Run  | ArrayList | LinkedList |
+| Run  | HashMap | TreeMap |
 | :--: | :-------: | :--------: |
 | 0    |66.300514|1173.965755|
 | 1    |32.447116|1175.272319|
@@ -42,7 +42,7 @@ As it was mentioned before a TreeMap is backed by a Binary Search Tree, searchin
 
 For this experiment 1.000.000 keys were generated and introduced in the map. Afterwards all the elements in the maps were removed using the keys. These are the results:
 
-| Run  | ArrayList | LinkedList |
+| Run  | HashMap | TreeMap |
 | :--: | :-------: | :--------: |
 | 0    |60.149098|1136.488547|
 | 1    |44.960658|1160.109012|
@@ -56,3 +56,22 @@ For this experiment 1.000.000 keys were generated and introduced in the map. Aft
 | 9    |55.014767|1238.421147|
 
 As in the previous experiments, the fact that the TreeMap is backed by a BinarySearchTree makes the runtime more expensive. In this case, everytime a deletion has to be made, it is required to find the node, delete it and balance the tree, which ends up being an expensive operation to perform. 
+
+## Iterate over the whole entries
+
+To perform this experiment, after initializing the map with entries with 1.000.000 randomly generated strings as keys, the iteration over the entries was done with the iterator of the entrySet. These are the results:
+
+| Run  | HashMap | TreeMap |
+| :--: | :-------: | :--------: |
+| 0    |40.971871|95.641662|
+| 1    |33.365595|93.702393|
+| 2    |33.260542|93.64184|
+| 3    |34.427204|93.861474|
+| 4    |33.288247|92.627542|
+| 5    |33.492769|92.039473|
+| 6    |33.045627|91.646465|
+| 7    |33.690734|94.101425|
+| 8    |33.592282|81.987432|
+| 9    |33.275092|97.945745|
+
+In the TreeMap implementation, Java object references need to be handled, which leads to a higher time compared to the HashMap.
