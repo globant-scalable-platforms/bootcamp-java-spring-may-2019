@@ -38,3 +38,22 @@ I think it is also interesting to see the behavior of adding an element in the m
 | 9    |12852.429701|168900.878367|
 
 As it can be seen, the performance of the ArrayList is much better compared to the LinkedList. Even though the ArrayList has to copy the array in order to "open a space" for the new element, it remains faster since the LinkedList needs to iterate from the head node of the LinkedList until the i-th element, in order to insert the new element. As well it is cheaper to handle with an ArrayList since all the data is alligned in memory, on the other hand the LinkedList needs to handle Java Object references for every single element, which can lead to an expesive performance.
+
+## Removing elements
+
+To compare the performance of the deletion of elements of both data structures, 500.000 randomly generated elements were introduced and then the removal was done by deleting the middle element, until it was empty. These are the results:
+
+| Run  | ArrayList | LinkedList |
+| :--: | :-------: | :--------: |
+| 0    |12763.167444|97244.856447|
+| 1    |12571.672897|100134.848039|
+| 2    |12581.522105|98712.65971|
+| 3    |13226.581317|112992.199553|
+| 4    |12864.544077|110101.183312|
+| 5    |13090.433258|113987.816915|
+| 6    |12421.614214|100072.559212|
+| 7    |13440.618999|105630.724197|
+| 8    |13090.94765|107265.611273|
+| 9    |12851.404415|103888.869027|
+
+The results are similar than when adding in the middle position, seen on the previous experiment, due to the same reasons. The times for both are smaller compared to the addition, this has to do with the allocation of memory that is required for both data structures when adding.
