@@ -57,3 +57,23 @@ To compare the performance of the deletion of elements of both data structures, 
 | 9    |12851.404415|103888.869027|
 
 The results are similar than when adding in the middle position, seen on the previous experiment, due to the same reasons. The times for both are smaller compared to the addition, this has to do with the allocation of memory that is required for both data structures when adding.
+
+## Iterate over the whole collection
+
+For this experiment the ArrayList and LinkedList iterators were used. The experiment was realized for 10.000.000 randomly generated elements. These are the results:
+
+| Run  | ArrayList | LinkedList |
+| :--: | :-------: | :--------: |
+| 0    |13.803908|34.989844|
+| 1    |39.910735|29.5185|
+| 2    |0.393933|30.883106|
+| 3    |0.352124|24.789555|
+| 4    |0.364093|28.792904|
+| 5    |0.503611|27.505166|
+| 6    |0.364829|29.474882|
+| 7    |0.352032|33.227527|
+| 8    |0.385448|28.920211|
+| 9    |0.363719|26.875483|
+
+In general, for collections with sequential access, such as a LinkedList, tend to perform slower than the random access ones, as an ArrayList. 
+Another reason, is that in general is it faster due to the fact that in the back, the ArrayList is implemented using an array.
