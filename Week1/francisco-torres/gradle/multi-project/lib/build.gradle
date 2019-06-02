@@ -20,3 +20,9 @@ repositories {
     jcenter()
 }
 
+// task to create the fat jar
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
