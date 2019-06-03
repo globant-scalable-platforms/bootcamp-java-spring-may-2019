@@ -11,7 +11,7 @@ public class RansomNote {
 	private static Map<String,Integer> magazineWords = new HashMap<>();
 	private static Map<String,Integer> noteWords = new HashMap<>();
 	
-	public static void setSize(String amount) {
+	private static void setSize(String amount) {
 		String[] amounts = amount.split(" ");
 		
 		try {
@@ -21,8 +21,8 @@ public class RansomNote {
 			System.out.println("the entered values are not numbers.");
 		}
 	}
-	
-	public static void setWordsMap(Map<String,Integer> wordsMap, String words, int size) {
+
+	private static void setWordsMap(Map<String,Integer> wordsMap, String words, int amount) {
 		for (String string : words.split(" ")) {
 			if (wordsMap.containsKey(string)) {
 				wordsMap.put(string, wordsMap.get(string)+1);
@@ -31,13 +31,13 @@ public class RansomNote {
 				wordsMap.put(string, 1);
 			}
 			
-			if (wordsMap.size() >= size) {
+			if (wordsMap.size() >= amount) {
 				break;
 			}
 		}
 	}
-	
-	public static boolean validateWordsRequired() {
+
+	private static boolean validateWordsRequired() {
 		for (String key : noteWords.keySet()) {
 			if(!magazineWords.containsKey(key)) {
 	        	return false;
@@ -62,7 +62,9 @@ public class RansomNote {
 			
 			System.out.println(validateWordsRequired()?"Yes":"No");
 		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("the number of words is not right according to the first values entered.");
 	    } catch (IOException e) {
+			System.out.println("there was an error while entered the values.");
 		}
 	}
 }

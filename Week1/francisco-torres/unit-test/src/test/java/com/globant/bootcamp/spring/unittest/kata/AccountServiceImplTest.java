@@ -47,7 +47,7 @@ public class AccountServiceImplTest {
     }
 
     @Test
-    public void transferMoneyBeetwenAccounts() {
+    public void transferMoneyBetweenAccounts() {
         transferAmount = 2500;
         initialBalanceCurrentAccount = 3000;
         initialBalanceSavingAccount = 1500;

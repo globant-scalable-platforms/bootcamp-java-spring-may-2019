@@ -8,19 +8,27 @@ import java.util.stream.*;
 public class ListPerformance {
 	private static List<String> arrayList = new ArrayList<>();
 	private static List<String> linkedList = new LinkedList<>();
-	
-	public ListPerformance(int size) {
+
+	enum test {
+		INSERTMIDDLE,
+		REMOVEMIDDLE,
+		ADD,
+		ITERATE,
+		SORT
+	}
+
+	private ListPerformance(int size) {
 		populateLists(size);
 	}
 	
 	private void populateLists(int size) {
-		String string = null;
+		String randomString;
 		
 		for(int i = 0; i < size; i++) {
-			string = generateRandomString();
+			randomString = generateRandomString();
 			
-			ListPerformance.arrayList.add(string);
-			ListPerformance.linkedList.add(string);
+			ListPerformance.arrayList.add(randomString);
+			ListPerformance.linkedList.add(randomString);
 		}
 	}
 	
@@ -33,25 +41,25 @@ public class ListPerformance {
 						.collect(Collectors.joining());
 	}
 	
-	public long test(List<String> list, String test) {
+	private long test(List<String> list, test test) {
 		int indexInTheMiddle = list.size()/2;
-		String  value = generateRandomString();
+		String value = generateRandomString();
 		
 		Instant start = Instant.now();
 		switch (test) {
-		case "InsertMiddle":
+		case INSERTMIDDLE:
 			list.add(indexInTheMiddle, value);
 			break;
-		case "RemoveMiddle":
+		case REMOVEMIDDLE:
 			list.remove(indexInTheMiddle);
 			break;
-		case "Add":
+		case ADD:
 			list.add(value);
 			break;
-		case "Iterate":
+		case ITERATE:
 			for (String string : list) {}
 			break;
-		case "Sort":
+		case SORT:
 			Collections.sort(list);
 			break;
 		default:
@@ -64,7 +72,7 @@ public class ListPerformance {
 	
 	public static void main(String[] args) {
 		int size = 7_500_000;
-		ListPerformance listTest = null;
+		ListPerformance listTest;
 		
 		System.out.println("# Loading values...");
 		listTest = new ListPerformance(size);
@@ -72,20 +80,20 @@ public class ListPerformance {
 		System.out.println("\n# test started -> " + size + " values\n");
 		
 		System.out.println("# Insert an element in the middle");
-		System.out.println("  Arraylist  -> " + listTest.test(arrayList,"InsertMiddle") + "ms");
-		System.out.println("  LinkedList -> " + listTest.test(linkedList,"InsertMiddle") + "ms");
+		System.out.println("  Arraylist  -> " + listTest.test(arrayList, test.INSERTMIDDLE) + "ms");
+		System.out.println("  LinkedList -> " + listTest.test(linkedList, test.INSERTMIDDLE) + "ms");
 		System.out.println("# Remove an element from the middle");
-		System.out.println("  Arraylist  -> " + listTest.test(arrayList,"RemoveMiddle") + "ms");
-		System.out.println("  LinkedList -> " + listTest.test(linkedList, "RemoveMiddle") + "ms");
+		System.out.println("  Arraylist  -> " + listTest.test(arrayList, test.REMOVEMIDDLE) + "ms");
+		System.out.println("  LinkedList -> " + listTest.test(linkedList, test.REMOVEMIDDLE) + "ms");
 		System.out.println("# Add an element");
-		System.out.println("  Arraylist  -> " + listTest.test(arrayList,"Add") + "ms");
-		System.out.println("  LinkedList -> " + listTest.test(linkedList, "Add") + "ms");
+		System.out.println("  Arraylist  -> " + listTest.test(arrayList, test.ADD) + "ms");
+		System.out.println("  LinkedList -> " + listTest.test(linkedList, test.ADD) + "ms");
 		System.out.println("# Iterate");
-		System.out.println("  Arraylist  -> " + listTest.test(arrayList,"Iterate") + "ms");
-		System.out.println("  LinkedList -> " + listTest.test(linkedList, "Iterate") + "ms");
+		System.out.println("  Arraylist  -> " + listTest.test(arrayList, test.ITERATE) + "ms");
+		System.out.println("  LinkedList -> " + listTest.test(linkedList, test.ITERATE) + "ms");
 		System.out.println("# Sort");
-		System.out.println("  Arraylist  -> " + listTest.test(arrayList,"Sort") + "ms");
-		System.out.println("  LinkedList -> " + listTest.test(linkedList, "Sort") + "ms");
+		System.out.println("  Arraylist  -> " + listTest.test(arrayList, test.SORT) + "ms");
+		System.out.println("  LinkedList -> " + listTest.test(linkedList, test.SORT) + "ms");
 		
 		System.out.println("\n# test finished");
 	}

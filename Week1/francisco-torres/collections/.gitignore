@@ -1,6 +1,8 @@
-*.classpath
-*.project
+# Ignore idea files
+*.iml
+.idea
 
-/bin/
+# Ignore idea build output directory
+out
 
 

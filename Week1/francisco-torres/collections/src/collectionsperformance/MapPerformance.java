@@ -8,33 +8,40 @@ public class MapPerformance {
 	private static Map<Integer, String> hashMap = new HashMap<>();
 	private static Map<Integer, String> treeMap = new TreeMap<>();
 	private static Integer reservedKey = null;  
-	
-	public MapPerformance(int size) {
+
+	enum test {
+		PUT,
+		FINDBYKEY,
+		REMOVEBYKEY,
+		ITERATE
+	}
+
+	private MapPerformance(int size) {
 		populateMaps(size);
 		reservedKey = generateRandomKey(hashMap);
 	}
 	
 	private void populateMaps(int size) {
-		Integer integer = null;
-		String string = null;
+		Integer randomKey;
+		String randomString;
 		
 		for(int i = 0; i < size; i++) {
-			integer = generateRandomKey(hashMap);
-			string = generateRandomString();
+			randomKey = generateRandomKey(hashMap);
+			randomString = generateRandomString();
 			
-			MapPerformance.hashMap.put(integer, string);
-			MapPerformance.treeMap.put(integer, string);
+			MapPerformance.hashMap.put(randomKey, randomString);
+			MapPerformance.treeMap.put(randomKey, randomString);
 		}
 	}
 	
 	private Integer generateRandomKey(Map<Integer, String> map) {
-		Integer integer = null;
+		Integer randomKey;
 		
 		do {
-			integer = new Random().nextInt();
-		} while(map.containsKey(integer));
+			randomKey = new Random().nextInt();
+		} while(map.containsKey(randomKey));
 		
-		return integer;
+		return randomKey;
 	}
 	
 	private String generateRandomString() {
@@ -46,23 +53,23 @@ public class MapPerformance {
 						.collect(Collectors.joining());
 	}
 	
-	public long test(Map<Integer, String> map, String test) {
+	private long test(Map<Integer, String> map, test test) {
 		Integer key = reservedKey;
 		String  value = generateRandomString();
 		
 		Instant start = Instant.now();
 		switch (test) {
-		case "Put":
+		case PUT:
 			map.put(key,value);
 			break;
-		case "FindByKey":
+		case FINDBYKEY:
 			map.get(key);
 			break;
-		case "RemoveByKey":
+		case REMOVEBYKEY:
 			map.remove(key);
 			break;
-		case "Iterate":
-			map.forEach((k,v) -> {return;});
+		case ITERATE:
+			map.forEach((k,v) -> {});
 			break;
 		default:
 			return -1;
@@ -74,7 +81,7 @@ public class MapPerformance {
 	
 	public static void main(String[] args) {
 		int size = 7_500_000;
-		MapPerformance mapTest = null;
+		MapPerformance mapTest;
 		
 		System.out.println("# Loading values...");
 		mapTest = new MapPerformance(size);
@@ -82,17 +89,17 @@ public class MapPerformance {
 		System.out.println("\n# test started -> " + size + " values\n");
 		
 		System.out.println("# Put an element");
-		System.out.println("  HashMap -> " + mapTest.test(hashMap,"Put") + "ms");
-		System.out.println("  TreeMap -> " + mapTest.test(treeMap,"Put") + "ms");
+		System.out.println("  HashMap -> " + mapTest.test(hashMap,test.PUT) + "ms");
+		System.out.println("  TreeMap -> " + mapTest.test(treeMap,test.PUT) + "ms");
 		System.out.println("# Find by key");
-		System.out.println("  HashMap -> " + mapTest.test(hashMap,"FindByKey") + "ms");
-		System.out.println("  TreeMap -> " + mapTest.test(treeMap,"FindByKey") + "ms");
+		System.out.println("  HashMap -> " + mapTest.test(hashMap,test.FINDBYKEY) + "ms");
+		System.out.println("  TreeMap -> " + mapTest.test(treeMap,test.FINDBYKEY) + "ms");
 		System.out.println("# Remove by key");
-		System.out.println("  HashMap -> " + mapTest.test(hashMap,"RemoveByKey") + "ms");
-		System.out.println("  TreeMap -> " + mapTest.test(treeMap,"RemoveByKey") + "ms");
+		System.out.println("  HashMap -> " + mapTest.test(hashMap,test.REMOVEBYKEY) + "ms");
+		System.out.println("  TreeMap -> " + mapTest.test(treeMap,test.REMOVEBYKEY) + "ms");
 		System.out.println("# Iterate");
-		System.out.println("  HashMap -> " + mapTest.test(hashMap,"Iterate") + "ms");
-		System.out.println("  TreeMap -> " + mapTest.test(treeMap,"Iterate") + "ms");
+		System.out.println("  HashMap -> " + mapTest.test(hashMap,test.ITERATE) + "ms");
+		System.out.println("  TreeMap -> " + mapTest.test(treeMap,test.ITERATE) + "ms");
 		
 		System.out.println("\n# test finished");
 	}
