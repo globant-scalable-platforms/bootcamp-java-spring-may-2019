@@ -17,5 +17,3 @@ This code I put in the root build.gradle of the project and run the command:
 gradle build
 ```
 without errors
-
-I copied and pasted the fatJar.jar in the root of the project.
