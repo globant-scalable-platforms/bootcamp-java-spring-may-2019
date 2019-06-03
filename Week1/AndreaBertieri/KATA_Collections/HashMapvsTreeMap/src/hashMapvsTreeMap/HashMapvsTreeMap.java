@@ -1,7 +1,6 @@
 package hashMapvsTreeMap;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class HashMapvsTreeMap {
 	
