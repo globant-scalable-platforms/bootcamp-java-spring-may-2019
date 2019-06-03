@@ -8,5 +8,8 @@ public class BootGradleApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BootGradleApplication.class, args);
+		System.out.println();
+		System.out.println("-- David Acuna --");
+		System.out.println("Hello BootCamp");
 	}
 }
