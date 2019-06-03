@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+    id "org.sonarqube" version "2.7.1"
+}
+
+version = '1.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    testImplementation 'junit:junit:4.12'
+}
+
+
+mainClassName = 'SonarProject.App'
