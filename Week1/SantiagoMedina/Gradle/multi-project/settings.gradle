@@ -9,4 +9,5 @@
 
 include 'vehicleFactory'
 include 'wheel-factory'
+include 'body-factory'
 rootProject.name = 'multi-project'

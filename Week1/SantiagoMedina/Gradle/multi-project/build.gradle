@@ -8,7 +8,7 @@ plugins {
     id 'java'
 }
 
-configure(subprojects.findAll { it.name == 'vehicleFactory' || it.name == 'wheel-factory' }) { 
+configure(subprojects.findAll { it.name == 'vehicleFactory' || it.name == 'wheel-factory' || it.name == 'body-factory'}) { 
 
     apply plugin: 'java'
 

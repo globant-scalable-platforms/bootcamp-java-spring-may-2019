@@ -40,7 +40,7 @@ public class Wheel implements InterfaceWheel {
 
     @Override
     public void description(){
-        System.out.println("The vehicle wheel have:");
+        System.out.println("The vehicle has:");
         System.out.println(getWheels() + " wheels");
         System.out.println("the diameter of each wheel is " + getDiameterWheel());
         System.out.println("the width of each wheel is " + getWidthWheel());
