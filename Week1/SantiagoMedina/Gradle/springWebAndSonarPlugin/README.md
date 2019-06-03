@@ -13,3 +13,9 @@ And run the command
 gradle build
 ```
 To build the project again.
+
+Run the command
+```gradle
+gradle bootRun
+```
+to run the spring boot project
