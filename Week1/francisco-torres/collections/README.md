@@ -7,7 +7,7 @@ ListPerformance.java -> Display the performance for List collections.
 MapPerformance.java -> Display the performance for Map collections.
 
 - /src/ransomnote
-RansomNote.java -> Solve the HackerRank challenge using map collections.
+RansomNote.java -> Solve the HackerRank challenge using map collections. Includes the automatic test cases result from hackerrank.
 
 ### Collections performance findings
 The tests were executed with 7.500.000 values and it got the next results:
