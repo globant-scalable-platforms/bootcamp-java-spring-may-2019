@@ -21,3 +21,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+Week1/.vscode/settings.json
+Week1/Gradle/multi-project/.project
+Week1/Gradle/multi-project/.settings/org.eclipse.buildship.core.prefs
+Week1/Gradle/multi-project/docs/.project
+Week1/Gradle/multi-project/greeting-library/.settings/org.eclipse.buildship.core.prefs
+Week1/Gradle/multi-project/greeting-library/.project
+Week1/Gradle/multi-project/greeting-library/.classpath
+Week1/Gradle/multi-project/greeter/.settings/org.eclipse.buildship.core.prefs
+Week1/Gradle/multi-project/greeter/.project
+Week1/Gradle/multi-project/docs/.settings/org.eclipse.buildship.core.prefs
