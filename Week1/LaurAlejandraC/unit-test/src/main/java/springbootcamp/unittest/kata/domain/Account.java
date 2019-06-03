@@ -5,7 +5,7 @@ public class Account {
     private int balance;
     private final AccountType accountType;
     
-    private Account(final String username, final int balance, final AccountType accountType) {
+    public Account(final String username, final int balance, final AccountType accountType) {
         this.username = username;
         this.balance = balance;
         this.accountType = accountType;

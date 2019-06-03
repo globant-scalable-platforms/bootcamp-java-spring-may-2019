@@ -1,17 +1,16 @@
 package springbootcamp.unittest.kata.business;
 
-import javax.security.auth.login.AccountException;
-
 import springbootcamp.unittest.kata.data.AccountRepository;
 import springbootcamp.unittest.kata.domain.Account;
 import springbootcamp.unittest.kata.domain.AccountType;
 import springbootcamp.unittest.kata.domain.TransferResponse;
+import springbootcamp.unittest.kata.exception.AccountException;
 
 public class AccountServiceImpl implements AccountService {
     
     private final AccountRepository accountRepository;
     
-    private AccountServiceImpl(final AccountRepository accountRepository) {
+    public AccountServiceImpl(final AccountRepository accountRepository) {
         this.accountRepository = accountRepository;
     }
 
@@ -27,7 +26,7 @@ public class AccountServiceImpl implements AccountService {
         }
         
         int balanceCurrentAccount = currentAccount.getBalance() - amount;
-        int balanceSavingAccount = savingAccount.getBalance() * amount;
+        int balanceSavingAccount = savingAccount.getBalance() + amount;
         
         currentAccount.setBalance(balanceCurrentAccount);
         savingAccount.setBalance(balanceSavingAccount);

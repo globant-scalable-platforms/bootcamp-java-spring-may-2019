@@ -8,5 +8,5 @@ import springbootcamp.unittest.kata.domain.TransferResponse;
 
 public interface AccountService {
     Account retrieveAccount(String username, AccountType accountType);
-    TransferResponse transferMoney(Account currentAccount, Account savingAccount, final int amount) throws AccountException;
+    TransferResponse transferMoney(Account currentAccount, Account savingAccount, final int amount) throws AccountException, springbootcamp.unittest.kata.exception.AccountException;
 }
