@@ -12,7 +12,7 @@ public class AccountServiceImpl implements AccountService {
     
     private final AccountRepository accountRepository;
     
-    private AccountServiceImpl(final AccountRepository accountRepository) {
+    public AccountServiceImpl(final AccountRepository accountRepository) {
         this.accountRepository = accountRepository;
     }
 
@@ -35,7 +35,9 @@ public class AccountServiceImpl implements AccountService {
         
         Account newCurrentAccount = accountRepository.updateAccount(currentAccount);
         Account newSavingAccount = accountRepository.updateAccount(savingAccount);
-        
+
+
+
         return new TransferResponse(newCurrentAccount, newSavingAccount);
     }
 
