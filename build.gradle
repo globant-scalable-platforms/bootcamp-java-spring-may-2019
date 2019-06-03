@@ -13,6 +13,7 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 jar {
@@ -37,5 +38,6 @@ task customFatJar(type: Jar) {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	compile 'org.springframework.boot:spring-boot-starter-web','org.apache.tomcat.embed:tomcat-embed-jasper','javax.servlet:jstl'
+	testImplementation 'org.mockito:mockito-core:2.7.22'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
