@@ -31,3 +31,4 @@ Week1/Gradle/multi-project/greeting-library/.classpath
 Week1/Gradle/multi-project/greeter/.settings/org.eclipse.buildship.core.prefs
 Week1/Gradle/multi-project/greeter/.project
 Week1/Gradle/multi-project/docs/.settings/org.eclipse.buildship.core.prefs
+Week1/.vscode/launch.json
