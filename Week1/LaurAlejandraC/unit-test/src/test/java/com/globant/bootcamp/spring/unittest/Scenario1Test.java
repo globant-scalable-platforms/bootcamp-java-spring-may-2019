@@ -26,15 +26,9 @@ public class Scenario1Test {
     }
 
     @Test
-    public void transfer(){
+    public void transfer() throws Exception{
         AccountServiceImpl accountService = new AccountServiceImpl(accountRepository);
-
-        try{
-            TransferResponse transferResponse = accountService.transferMoney(currentAccount, savingsAccount, 2500);
-            Assert.assertTrue(transferResponse.getCurrentAccount().getBalance() == 500 && transferResponse.getSavingAccount().getBalance() == 4000);
-        }
-        catch (Exception ex){
-            System.err.println(ex.getMessage());
-        }
+        TransferResponse transferResponse = accountService.transferMoney(currentAccount, savingsAccount, 2500);
+        Assert.assertTrue(transferResponse.getCurrentAccount().getBalance() == 500 && transferResponse.getSavingAccount().getBalance() == 4000);
     }
 }
