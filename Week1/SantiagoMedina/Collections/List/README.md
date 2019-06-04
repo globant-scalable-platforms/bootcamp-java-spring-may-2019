@@ -1,3 +1,9 @@
+## Run project
+```gradle
+1. gradle build
+2. gradle run
+```
+
 # ArrayList vs LinkedList
 In this execirse show how is the performance of the arraylist and the linkedlist with 5 operations, which are:
 
