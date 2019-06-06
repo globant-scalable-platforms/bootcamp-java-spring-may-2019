@@ -1,6 +1,12 @@
 package game.demo.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
 public class Game {
+    @Autowired
+    private ApplicationContext applicationContext;
+
     private Player player1;
     private Player player2;
     private int currentTurn;
@@ -21,18 +27,16 @@ public class Game {
         return null;
     }
 
-    public boolean play(int id){
+    public void play(int id){
         Player playerAttempting = getPlayer(id);
 
         if(playerAttempting == null || id != currentTurn || gameFinished())
-            return false;
+            return;
 
         playerAttempting.play();
         if(currentTurn == 2)
             attempts--;
         currentTurn = currentTurn == 2 ? 1 : 2;
-
-        return true;
     }
 
     public boolean gameFinished(){
@@ -48,5 +52,12 @@ public class Game {
 
     public int getCurrentTurn(){
         return currentTurn;
+    }
+
+    public void resetGame(){
+        this.player1 = applicationContext.getBean(Player.class);
+        this.player2 = applicationContext.getBean(Player.class);
+        currentTurn = 1;
+        attempts = 3;
     }
 }

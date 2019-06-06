@@ -48,6 +48,12 @@ public class GameController {
         return play(2);
     }
 
+    @GetMapping(value = "/reset", produces = "text/plain")
+    public ResponseEntity<String> resetGame(){
+        curGame.resetGame();
+        return new ResponseEntity<>("Game restarted", HttpStatus.OK);
+    }
+
     private String curScores(){
         StringBuilder sb = new StringBuilder();
 
@@ -65,7 +71,7 @@ public class GameController {
             return new ResponseEntity<>("Game has already finished: " + curScores(), HttpStatus.OK);
 
         if(curGame.getCurrentTurn() != id)
-            return new ResponseEntity<>("Current turn: " + curGame.getCurrentTurn() + System.getProperty("line.separator") + curScores(), HttpStatus.OK);
+            return new ResponseEntity<>("Play not made, current turn: " + curGame.getCurrentTurn() + System.getProperty("line.separator") + curScores(), HttpStatus.OK);
 
         curGame.play(id);
 
