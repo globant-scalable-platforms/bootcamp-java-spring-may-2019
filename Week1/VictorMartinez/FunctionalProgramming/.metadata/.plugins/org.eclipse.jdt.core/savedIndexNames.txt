@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week1/VictorMartinez/FunctionalProgramming/.metadata/.plugins/org.eclipse.jdt.core
+334698234.index
+753457907.index
+1820199036.index

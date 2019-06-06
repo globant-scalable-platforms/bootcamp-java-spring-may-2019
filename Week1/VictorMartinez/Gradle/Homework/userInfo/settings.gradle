@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'userInfo'
-include('userInfo/src/main/java/userInfo/userinfo.java')
+include('userInfo.src.main.java.userInfo')

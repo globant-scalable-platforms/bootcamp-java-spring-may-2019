@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week1/VictorMartinez/FunctionalProgramming"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="574"/>
+		<item key="DIALOG_Y_ORIGIN" value="315"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="712"/>
+		<item key="DIALOG_Y_ORIGIN" value="277"/>
+		<item key="DIALOG_WIDTH" value="563"/>
+		<item key="DIALOG_HEIGHT" value="416"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+	</section>
+</section>

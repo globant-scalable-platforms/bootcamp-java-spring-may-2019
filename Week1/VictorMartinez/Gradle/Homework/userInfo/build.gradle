@@ -53,9 +53,15 @@ class userInfo extends DefaultTask{
 task printUser(type: userInfo){
 
 	doLast{ println "-----UserInfo------"
-	 	println "Username: ${userName}"
+		println "Username: ${userName}"
 		println "PassWord: ${passWord}"
 	}
 }
 
+task getHomeDir{
+
+	doLast{
+		println gradle.gradleHomeDir
+	}
+}
 

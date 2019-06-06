@@ -3,7 +3,7 @@ package userInfo;
 class userinfo extends DefaultTask{
 
         def userName = "Pepito Perez"
-        def passWord = "******"
+        def passWord = "1234"
 
         @TaskAction
         def newUser(){
