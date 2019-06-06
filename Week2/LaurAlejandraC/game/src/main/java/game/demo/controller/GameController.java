@@ -2,6 +2,8 @@ package game.demo.controller;
 
 import game.demo.domain.Game;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +15,7 @@ public class GameController {
     Game curGame;
 
     @GetMapping(produces = "text/plain")
-    public String getGameInformation(){
+    public ResponseEntity<String> getGameInformation(){
         StringBuilder sb = new StringBuilder();
         sb.append("Has game finished: " ).append(curGame.gameFinished());
         sb.append(System.getProperty("line.separator"));
@@ -33,16 +35,16 @@ public class GameController {
                 sb.append("Player ").append(scorePlayer1 > scorePlayer2 ? "1" : "2");
         }
 
-        return sb.toString();
+        return new ResponseEntity<>(sb.toString(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/player1", produces = "text/plain")
-    public String player1(){
+    public ResponseEntity<String> player1(){
         return play(1);
     }
 
     @GetMapping(value = "/player2", produces = "text/plain")
-    public String player2(){
+    public ResponseEntity<String> player2(){
         return play(2);
     }
 
@@ -58,12 +60,12 @@ public class GameController {
         return sb.toString();
     }
 
-    private String play(int id){
+    private ResponseEntity<String> play(int id){
         if(curGame.gameFinished())
-            return "Game has already finished: " + curScores();
+            return new ResponseEntity<>("Game has already finished: " + curScores(), HttpStatus.OK);
 
         if(curGame.getCurrentTurn() != id)
-            return "Current turn: " + curGame.getCurrentTurn() + System.getProperty("line.separator") + curScores();
+            return new ResponseEntity<>("Current turn: " + curGame.getCurrentTurn() + System.getProperty("line.separator") + curScores(), HttpStatus.OK);
 
         curGame.play(id);
 
