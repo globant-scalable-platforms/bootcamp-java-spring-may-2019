@@ -57,10 +57,10 @@ public class GameController {
     private String curScores(){
         StringBuilder sb = new StringBuilder();
 
-        sb.append("Player 1 score: ").append(curGame.getPlayerScore(1));
+        sb.append("Player 1 score: ").append(curGame.getScores(1));
         sb.append(System.getProperty("line.separator"));
 
-        sb.append("Player 2 score: ").append(curGame.getPlayerScore(2));
+        sb.append("Player 2 score: ").append(curGame.getScores(2));
         sb.append(System.getProperty("line.separator"));
 
         return sb.toString();

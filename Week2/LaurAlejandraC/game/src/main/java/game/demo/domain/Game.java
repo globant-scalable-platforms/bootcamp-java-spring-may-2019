@@ -50,6 +50,13 @@ public class Game {
         return -1;
     }
 
+    public String getScores(int id){
+        Player player = getPlayer(id);
+        if(player != null)
+            return player.getCurrentScore() + ", " + player.getScores();
+        return "";
+    }
+
     public int getCurrentTurn(){
         return currentTurn;
     }
