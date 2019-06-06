@@ -1,6 +1,6 @@
 package vehiclefactory;
 
-public interface InterfaceWheel {
+public interface WheelMethods {
     
     public void description();
 

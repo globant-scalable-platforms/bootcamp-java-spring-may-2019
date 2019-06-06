@@ -1,6 +1,6 @@
 package vehiclefactory;
 
-public class Wheel implements InterfaceWheel {
+public class Wheel implements WheelMethods {
     private Integer diameterWheel;
     private Integer widthWheel;
     private Integer wheels;

@@ -1,6 +1,6 @@
 package vehiclefactory;
 
-public class Body implements InterfaceBody {
+public class Body implements BodyMethods {
     private Integer widthBody;
     private Integer heightBody;
     private Integer lengthBody;

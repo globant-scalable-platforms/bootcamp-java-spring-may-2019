@@ -7,7 +7,7 @@ public class VehicleFactory {
 
     public static void main (String[] args){
 
-        Welcome();
+        welcomeMessage();
         int option;
         InputStream stream = System.in;
 		Scanner scanner = new Scanner(System.in);
@@ -54,7 +54,7 @@ public class VehicleFactory {
     
     }
 
-    public static void Welcome(){
+    public static void welcomeMessage(){
         System.out.println("Welcome to the wheel factory, in this factory only create default wheels and chassis");
         System.out.println("This is our catalogue");
         System.out.println("------------------------------------------------");
