@@ -11,7 +11,6 @@ import springbootcamp.unittest.kata.domain.Account;
 import springbootcamp.unittest.kata.domain.AccountType;
 import springbootcamp.unittest.kata.domain.TransferResponse;
 import springbootcamp.unittest.kata.data.AccountRepository;
-
 import javax.security.auth.login.AccountException;
 
 import static org.mockito.Mockito.*;
@@ -53,18 +52,13 @@ public class UnitTestApplicationTests {
 
 	}
 
-	@Test
-	public void moneyBetweenAccountInsufficientFound(){
+	@Test(expected = AccountException.class)
+	public void moneyBetweenAccountInsufficientFound() throws AccountException {
 
 		current.setBalance(100);
 		saving.setBalance(200);
 
-		try {
-			accountService.transferMoney(current, saving, 400);
-		}catch (AccountException e){
-			Assert.assertEquals(e.getMessage(), "insufficient funds");
-		}
-
+		accountService.transferMoney(current, saving, 400);
 
 	}
 
