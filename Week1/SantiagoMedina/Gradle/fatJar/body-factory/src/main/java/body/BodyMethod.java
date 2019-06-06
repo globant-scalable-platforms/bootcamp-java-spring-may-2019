@@ -1,6 +1,6 @@
 package vehiclefactory;
 
-public interface BodyMethods {
+public interface BodyMethod {
     
     public void description();
 
