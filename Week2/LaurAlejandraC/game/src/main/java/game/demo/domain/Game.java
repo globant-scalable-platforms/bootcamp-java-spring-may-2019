@@ -46,14 +46,14 @@ public class Game {
     public int getPlayerScore(int id){
         Player player = getPlayer(id);
         if(player != null)
-            return player.getCurrentScore();
+            return player.getTotalScore();
         return -1;
     }
 
     public String getScores(int id){
         Player player = getPlayer(id);
         if(player != null)
-            return player.getCurrentScore() + ", " + player.getScores();
+            return player.getTotalScore() + ", " + player.getScores();
         return "";
     }
 

@@ -54,6 +54,27 @@ public class GameController {
         return new ResponseEntity<>("Game restarted", HttpStatus.OK);
     }
 
+    @GetMapping(value = "/instructions", produces = "text/plain")
+    public ResponseEntity<String> getInstructions(){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("-------------- INSTRUCTIONS --------------");
+        sb.append(System.getProperty("line.separator"));
+        sb.append("The game which allows two players to try to get the highest score by generating three random numbers (one per attempt), " +
+                "these scores are added up to conform the total score. The player who achieves the highest score is the winner. " +
+                "The action is executed if it is the turn of the player and there are remaining attempts.");
+
+        sb.append(System.getProperty("line.separator"));
+        sb.append(System.getProperty("line.separator"));
+        sb.append("An user can make a move by accessing domain/game/player1 or domain/game/player2");
+        sb.append(System.getProperty("line.separator"));
+        sb.append("The information of the current game can be retrieved at domain/game");
+        sb.append(System.getProperty("line.separator"));
+        sb.append("The game can be restarted by accessing domain/game/reset");
+
+        return new ResponseEntity<>(sb.toString(), HttpStatus.OK);
+    }
+
     private String curScores(){
         StringBuilder sb = new StringBuilder();
 
