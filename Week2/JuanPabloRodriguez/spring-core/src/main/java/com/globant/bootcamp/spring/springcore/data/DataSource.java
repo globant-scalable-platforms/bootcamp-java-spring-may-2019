@@ -33,10 +33,6 @@ public class DataSource {
 				.findAny()
 				.orElse(null);
 
-		if (result != null) {
-			new Account(result.getUsername(), result.getPassword());
-		}
-
 		return result;
 
 	}
