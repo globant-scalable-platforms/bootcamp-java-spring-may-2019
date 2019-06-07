@@ -2,30 +2,34 @@ package com.globant.bootcamp.spring.springcore.data;
 
 import com.globant.bootcamp.spring.springcore.domain.Account;
 import com.globant.bootcamp.spring.springcore.utilities.RandomStrings;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 @Repository
 public class StaticDataSource implements DataSourceInterface {
 
-    private List<Account> accounts = new ArrayList<>(Arrays.asList(
-            new Account("Mike", "123456"),
-            new Account("Andres", "asdfgh"),
-            new Account("Camilo", "qwerty")
-    ));
+    private Map<String, Account> accounts = new HashMap<>();
+
+    @Autowired
+    public StaticDataSource() {
+        accounts = new HashMap<>();
+        accounts.put("Mike", new Account("Mike", "123456"));
+        accounts.put("Andres", new Account("Andres", "asdfgh"));
+        accounts.put("Camilo", new Account("Camilo", "qwerty"));
+    }
 
     @Override
     public Account retrieveUserInformation(String username) {
-        final Optional<Account> optionalAccount = accounts.stream().filter(acc -> acc.getUsername().equals(username)).findFirst();
-        if (optionalAccount.isPresent()) {
-            return optionalAccount.get();
+        final Account account = accounts.get(username);
+        if (Objects.nonNull(account)) {
+            return account;
         } else {
             final Account newAccount = new Account(username, RandomStrings.randomAlphaNumeric(6));
-            accounts.add(newAccount);
+            accounts.put(username, newAccount);
             return newAccount;
         }
     }

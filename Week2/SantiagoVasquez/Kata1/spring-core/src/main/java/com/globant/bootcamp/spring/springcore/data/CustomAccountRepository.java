@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 public class CustomAccountRepository implements AccountRepository {
 
     @Autowired
-    private StaticDataSource dataSource;
+    private DataSourceInterface dataSource;
 
     public Account getAccount(String username) {
         return dataSource.retrieveUserInformation(username);
