@@ -21,7 +21,7 @@ public class CustomAccountRepository implements AccountRepository {
 	public String retrieveAccountInformation(String username, String password) {
 		return dataSource.getDataSource().containsKey(username)?
 				(password.equalsIgnoreCase(dataSource.getOneDataSource(username))?
-				"Wellcome":"Wrong Password"):"Successfully Register"; 
+				"Wellcome":"Wrong Password"): dataSource.setAccount(username, password); 
 	}
     
 }

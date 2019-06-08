@@ -23,8 +23,9 @@ public class DataSource {
 		return users;
 	}
 
-	public void setAccount(String username, String userpassword) {
+	public String setAccount(String username, String userpassword) {
 		users.put(username, userpassword);	
+		return "Successfully Register";
 	}
 	
 }
