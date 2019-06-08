@@ -1,0 +1,51 @@
+Las pruebas del tiempo de ejecucion de cada clase y segun el tipo de coleccion, se realizaron con un arreglo de 20 elementos estaticos. La medida del tiempo de ejecucion de cada clase, se ajusto de manera que se evidenciaran cambios en 4 unidades de tiempo, pero no en milisegundos. Ademas, para cada clase se realizaron 5 pruebas de ejecucion y se saco el tiempo promedio a compara con el otro tipo de coleccion.
+
+1. ArrayList vs LinkedList
+
+1.1 Add:
+
+Para este tipo de accion ArrayList dio un tiempo promedio de 3967, mientras que LinkedList dio tiempo promedio de 12396. De esta manera podemos evidenciar que el ArrayList es mucho mas rapido agregando elementos, ya que LinkedList ademas de agregar el elemento, debe crear una referencia al siguiente elemento en la coleccion. 
+
+1.2 Remove:
+
+En la accion de eliminar un elemento de la mitad de la lista, ArrayList dio un tiempo promedio de 2005, mientras que LinkedList dio un tiempo promedio de 2545. Aunque se ve un tiempo de ejecucion menor en Arraylist, no es un tiempo significativamente diferente. Nuevamente esto ocurre ya que aparte de recorrer la lista hasta la mitad, LinkedList debe eliminar el elemento, su referencia y crear una nueva referencia entre el anterior y siguiente elemento al elemento eliminado.
+
+1.3 Insert in the middle:
+
+Insertando un elemento en la mitad de la lista, ArrayList dio un tiempo promedio de 1934 mientras que LinkedList dio un tiempo promedio de 2467. Esto nuevamente se presenta ya que LinkedList debe crear dos nuevas referencias en la lista para poder agregar un elemento en la mitad de la misma. 
+
+1.4 Iterate:
+
+Al iterar el arreglo, ArrayList tarda un tiempo promeido de 1953 mientras que LinkedList tarda 4006. Para esta accion se puede evidenciar un cambio significativo en el tiempo promedio de ejecucion. Esto se debe a que LinkedList debe recorrer el arreglo por elemento y referencia.
+
+1.5 Sorting:
+
+Al ordenar el arreglo, ArrayList se tarda un tiempo promedio de 9498, mientras que LinkedList tarda 8944. Esto se evidencia ya que, ArrayList compara uno a uno los elementos del arreglo, mientras que LinkedList los arregla segun orden de referencias. Esto es realmente significativo cuando se manejan grandes cantidades de datos, razon por la cual conviene usar LinkedList.
+
+
+
+
+
+2. HashMap vs TreeMap
+
+2.1 Put:
+
+Agregando un elemento al arreglo, HashMap se tarda un tiempo de ejecucion promedio de 7321, mientras que TreeMap tarda 40557. Es evidente que hay un aumento considerable al usar TreeMap, pues para agregar un elemento por medio de dicho tipo de coleccion, se debe recorrer gran parte del arreglo. Esto ultimo depende del valor que se le dara al nuevo elemento a agregar.
+
+2.2 Find:
+
+Al buscar un elemento del arreglo, HashMap tarda en promedio 442 mientras que TreeMap tarda 1756. Esto vuelve a ocurrir ya que en uno de los peores casos, TreeMap debe recorrer gran parte del arreglo para encontrar el elemento esperado.
+
+2.3 Remove:
+
+Para eliminar un elemento del arreglo, HashMap tarda en promedio 964 mientras que TreeMap tarda 2815. De la misma forma TreeMap tarda mas tiempo en eliminar un elemento pues en uno de los peores casos debe recorrer gran parte del arreglo para encontrar el elemento y eliminarlo.
+
+2.4 Iterate:
+
+Al iterar el arreglo, HashMap tarda en promedio 1717 mientras que TreeMap tarda 6308. Esto es claro de evidenciar ya que HashMap recorre el arreglo segun el indicativo del bucket en donde estan los elementos, mientras que TreeMap debe recorrer el arreglo en el orden de los elementos, es decir, primero por los elementos a la izquierda que son los de menor valor, para luego ir a los elementos de la derecha de la raiz, es decir, los de mayor valor. 
+
+
+
+
+
+
