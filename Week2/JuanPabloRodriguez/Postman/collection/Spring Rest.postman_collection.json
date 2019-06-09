@@ -7,13 +7,27 @@
 	"item": [
 		{
 			"name": "Get All Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "37ce962e-8de1-401a-8546-6aefd3085fb4",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Product 1\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/products",
+					"raw": "{{host}}:8080/products",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -25,6 +39,20 @@
 		},
 		{
 			"name": "Save Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c5b1b4a-7977-4740-9dd8-f782ce46df15",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -38,9 +66,9 @@
 					"raw": "{\n        \"id\": \"P835\",\n        \"name\": \"Product 5\"\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/products/",
+					"raw": "{{host}}:8080/products/",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -53,44 +81,151 @@
 		},
 		{
 			"name": "Get Product by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7d43ecd3-c404-48b9-857d-38f728a06f2d",
+						"exec": [
+							"pm.test(\"Check if product name is Product 1\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"Product 1\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{host}}:8080/products/{{id1}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"{{id1}}"
+					]
 				}
 			},
 			"response": []
 		},
 		{
 			"name": "Get Product filter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9bce00db-ab8a-4bb7-8a87-87f1c568016c",
+						"exec": [
+							"pm.test(\"Check if product id is P435\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].id).to.eql(\"P435\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{host}}:8080/products/filter?name=Product 1",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Product 1"
+						}
+					]
 				}
 			},
 			"response": []
 		},
 		{
 			"name": "Put Product by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "891d526f-b34d-4d29-8796-e2cb2bd1ee3d",
+						"exec": [
+							"pm.test(\"Response time is less than 50ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(50);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P435\",\n        \"name\": \"Product 1 new\"\n}"
+				},
 				"url": {
-					"raw": ""
+					"raw": "{{host}}:8080/products/{{id1}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"{{id1}}"
+					]
 				}
 			},
 			"response": []
 		},
 		{
 			"name": "Delete Product by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ea7ae266-c85d-4682-a098-4b706dfd9419",
+						"exec": [
+							"pm.test(\"Content-Length is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Length\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{host}}:8080/products/{{id2}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"{{id2}}"
+					]
 				}
 			},
 			"response": []
