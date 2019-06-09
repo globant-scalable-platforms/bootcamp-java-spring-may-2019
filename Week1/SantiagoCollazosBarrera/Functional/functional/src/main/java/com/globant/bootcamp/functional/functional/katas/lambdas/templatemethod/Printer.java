@@ -1,25 +1,27 @@
 package com.globant.bootcamp.functional.functional.katas.lambdas.templatemethod;
 
 import java.util.function.Consumer;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class Printer {
+    
+    static Logger logger = Logger.getAnonymousLogger();
 
     private Printer() {
     }
 
     public static String printMessage(Consumer<String> section, String message) {
         String messageToPrint = message.trim().toUpperCase();
-        //preparePapel();
+        
         section.accept("preparePapel");
         try {
             messageToPrint = decorateMessage(messageToPrint);
             printMessageBrand1(messageToPrint);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "an exception was thrown", e);
         }
         section.accept(" shutting down printer ");
-        //turnOffPrinter();
-
         return messageToPrint;
     }
 

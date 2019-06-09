@@ -19,8 +19,15 @@ public class CollectionsArrayVSLinked {
     
     public static int LIMIT = 10000000;
 
-    private ArrayList<Integer> containerArray = new ArrayList();
-    private LinkedList<Integer> containerLinked = new LinkedList();
+    public static int MILLISECONDS = 1000000;
+
+    private List<Integer> containerArray = new ArrayList();
+    private List<Integer> containerLinked = new LinkedList();
+
+    public CollectionsArrayVSLinked(){
+        initContainer(containerArray);
+        initContainer(containerLinked);
+    }
     
     public void addElement(int element, List container) {
         container.add(element);
@@ -41,7 +48,7 @@ public class CollectionsArrayVSLinked {
     }
 
     public void showContainer(List container) {
-        container.forEach(value -> System.out.print(value + " "));
+        container.forEach(value -> System.out.print(value + " "));        
     }
 
     public void initContainer(List container) {
@@ -76,62 +83,59 @@ public class CollectionsArrayVSLinked {
         
         long start,end;        
 
-        collections.initContainer(collections.getContainerArray());
-        collections.initContainer(collections.getContainerLinked());
-
         System.out.println("Add new Element...\n");
         start = System.nanoTime();
         collections.addElement(r.nextInt(LIMIT), collections.getContainerArray());
         end = System.nanoTime();        
-        System.out.println("Time (Miliseconds) ArrayList: " + ((end - start)/1000000));
+        System.out.println("Time (Miliseconds) ArrayList: " + ((end - start)/MILLISECONDS));
         
         start = System.nanoTime();
         collections.addElement(r.nextInt(LIMIT), collections.getContainerLinked());
         end = System.nanoTime();        
-        System.out.println("Time (Miliseconds) Linked: " + ((end - start)/1000000));
+        System.out.println("Time (Miliseconds) Linked: " + ((end - start)/MILLISECONDS));
         
         
         System.out.println("\nRemove element from the middle...\n");
         start = System.nanoTime();
         collections.removeFromMiddle(collections.getContainerArray());
         end = System.nanoTime();
-        System.out.println("Time (Miliseconds) ArrayList: " + ((end - start)/1000000));        
+        System.out.println("Time (Miliseconds) ArrayList: " + ((end - start)/MILLISECONDS));        
         
         start = System.nanoTime();
         collections.removeFromMiddle(collections.getContainerLinked());
         end = System.nanoTime();
-        System.out.println("Time (Miliseconds) Linked: " + ((end - start)/1000000));
+        System.out.println("Time (Miliseconds) Linked: " + ((end - start)/MILLISECONDS));
         
         System.out.println("\nInsert in the middle...\n");
         start = System.nanoTime();
         collections.insertInMiddle(r.nextInt(LIMIT), collections.getContainerArray());
         end = System.nanoTime();
-        System.out.println("Time (Miliseconds) ArrayList: " + ((end - start)/1000000));        
+        System.out.println("Time (Miliseconds) ArrayList: " + ((end - start)/MILLISECONDS));        
         start = System.nanoTime();
         collections.insertInMiddle(r.nextInt(LIMIT), collections.getContainerLinked());
         end = System.nanoTime();
-        System.out.println("Time (Miliseconds) Linked: " + ((end - start)/1000000));
+        System.out.println("Time (Miliseconds) Linked: " + ((end - start)/MILLISECONDS));
         
         System.out.println("\nIterate over the whole collection...\n");
         start = System.nanoTime();
         collections.showContainer(collections.getContainerArray());
         end = System.nanoTime();
-        System.out.println("\nTime (Miliseconds) ArrayList: " + ((end - start)/1000000));        
+        System.out.println("\nTime (Miliseconds) ArrayList: " + ((end - start)/MILLISECONDS));        
         start = System.nanoTime();
         collections.showContainer(collections.getContainerLinked());
         end = System.nanoTime();
-        System.out.println("\nTime (Miliseconds) Linked: " + ((end - start)/1000000));
+        System.out.println("\nTime (Miliseconds) Linked: " + ((end - start)/MILLISECONDS));
         
         System.out.println("\nSorting the collection...\n");
         
         start = System.nanoTime();
         collections.orderContainer(collections.getContainerArray()); 
         end = System.nanoTime();
-        System.out.println("\nTime (Miliseconds) ArrayList: " + ((end - start)/1000000));                
+        System.out.println("\nTime (Miliseconds) ArrayList: " + ((end - start)/MILLISECONDS));                
         start = System.nanoTime();               
         collections.orderContainer(collections.getContainerLinked());
         end = System.nanoTime();
-        System.out.println("\nTime (Miliseconds) Linked: " + ((end - start)/1000000));
+        System.out.println("\nTime (Miliseconds) Linked: " + ((end - start)/MILLISECONDS));
         
         
         
