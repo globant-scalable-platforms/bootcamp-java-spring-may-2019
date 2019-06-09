@@ -4,6 +4,7 @@ import com.bootcamp.restchallenge.controller.model.ApiError;
 import com.bootcamp.restchallenge.exception.HeaderValidationException;
 import com.bootcamp.restchallenge.exception.IncorrectDateException;
 import com.bootcamp.restchallenge.exception.IncorrectFormatDateException;
+import com.bootcamp.restchallenge.exception.InvalidNumericCSVFileData;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,7 @@ public class ResponseExceptionHandler {
             IncorrectDateException.class,
             HttpMessageNotReadableException.class,
             HeaderValidationException.class,
+            InvalidNumericCSVFileData.class,
     })
     public final ResponseEntity<ApiError> dateOperationIncorrectDateExceptionHandler(Exception exception, WebRequest request) {
         HttpHeaders headers = new HttpHeaders();
@@ -35,6 +37,8 @@ public class ResponseExceptionHandler {
             return handleExceptionInternal(exception, new ApiError("Missing arguments"), headers, HttpStatus.BAD_REQUEST, request);
         } else if (exception instanceof HeaderValidationException) {
             return handleExceptionInternal(exception, null, headers, HttpStatus.FORBIDDEN, request);
+        } else if (exception instanceof InvalidNumericCSVFileData) {
+            return handleExceptionInternal(exception, new ApiError("Invalid file format"), headers, HttpStatus.BAD_REQUEST, request);
         } else {
             HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
             return handleExceptionInternal(exception, null, headers, status, request);

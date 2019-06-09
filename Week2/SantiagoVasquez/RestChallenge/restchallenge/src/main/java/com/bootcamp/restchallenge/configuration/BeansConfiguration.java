@@ -1,7 +1,6 @@
 package com.bootcamp.restchallenge.configuration;
 
-import com.bootcamp.restchallenge.data.DateValidationImpl;
-import com.bootcamp.restchallenge.data.DateValidationInterface;
+import com.bootcamp.restchallenge.data.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -13,5 +12,17 @@ public class BeansConfiguration {
     @Scope("singleton")
     public DateValidationInterface dateOperation() {
         return new DateValidationImpl();
+    }
+
+    @Bean
+    @Scope("singleton")
+    public NumericControllerInterface numericController() {
+        return new NumericControllerImpl();
+    }
+
+    @Bean
+    @Scope("singleton")
+    public NumericCSVFileToListInterface numericCSVFileToList() {
+        return new NumericCSVFileToListImpl();
     }
 }
