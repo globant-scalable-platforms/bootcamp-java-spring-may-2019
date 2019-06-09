@@ -3,6 +3,7 @@ package bootcamp.springrest.numberService.data;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class NumberRepository {
-    private BigInteger average;
+    private BigDecimal average;
     private BigInteger count;
     private BigInteger max;
     private BigInteger min;
@@ -31,10 +32,12 @@ public class NumberRepository {
             String[] toParse = (new String(file.getBytes())).split(",");
 
             numbers = Arrays.stream(toParse)
+                    .map(String::trim)
                     .map(BigInteger::new)
                     .collect(Collectors.toList());
 
         }catch (Exception ex){
+            System.out.println(ex.getMessage());
             return HttpStatus.BAD_REQUEST;
         }
 
@@ -45,7 +48,8 @@ public class NumberRepository {
             count = count.add(BigInteger.ONE);
         }
 
-        average = sum.divide(count);
+        average = new BigDecimal(sum);
+        average = average.divide(new BigDecimal(count), 4, BigDecimal.ROUND_DOWN);
 
         return HttpStatus.OK;
     }
@@ -54,7 +58,7 @@ public class NumberRepository {
         return numbers;
     }
 
-    public BigInteger getAverage() {
+    public BigDecimal getAverage() {
         return average;
     }
 
