@@ -25,4 +25,10 @@ public class BeansConfiguration {
     public NumericCSVFileToListInterface numericCSVFileToList() {
         return new NumericCSVFileToListImpl();
     }
+
+    @Bean
+    @Scope("singleton")
+    public StudentsControllerInterface studentsController() {
+        return new StudentsControllerImpl();
+    }
 }

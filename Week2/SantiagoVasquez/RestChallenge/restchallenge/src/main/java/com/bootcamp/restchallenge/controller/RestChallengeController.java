@@ -8,6 +8,8 @@ import com.bootcamp.restchallenge.controller.model.numbers.NumbersResponse;
 import com.bootcamp.restchallenge.data.DateValidationInterface;
 import com.bootcamp.restchallenge.data.NumericCSVFileToListInterface;
 import com.bootcamp.restchallenge.data.NumericControllerInterface;
+import com.bootcamp.restchallenge.data.StudentsControllerInterface;
+import com.bootcamp.restchallenge.domain.Student;
 import com.bootcamp.restchallenge.exception.IncorrectDateException;
 import com.bootcamp.restchallenge.exception.InvalidNumericCSVFileData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +35,10 @@ public class RestChallengeController {
     @Autowired
     @Qualifier(value = "numericCSVFileToList")
     private NumericCSVFileToListInterface numericCSVFileToList;
+
+    @Autowired
+    @Qualifier(value = "studentsController")
+    private StudentsControllerInterface studentsController;
 
     /**
      * Given a date range input (from, to), validate that to date is greater than from date,
@@ -70,5 +76,10 @@ public class RestChallengeController {
         response.setSum(numericController.sum(integerList));
 
         return response;
+    }
+
+    @GetMapping(path = "/students")
+    public List<Student> getStudents(@RequestParam(required = false) String name, @RequestParam(required = false) String identification, @RequestParam(required = false) Integer age) {
+        return studentsController.getStudents(name, identification, age);
     }
 }
