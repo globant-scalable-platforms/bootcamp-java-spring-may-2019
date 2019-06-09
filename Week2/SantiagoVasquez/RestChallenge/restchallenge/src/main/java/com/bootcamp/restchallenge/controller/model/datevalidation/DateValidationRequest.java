@@ -1,11 +1,11 @@
-package com.bootcamp.restchallenge.controller.model;
+package com.bootcamp.restchallenge.controller.model.datevalidation;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-public class DateOperationRequest {
+public class DateValidationRequest {
 
     @NotNull
     @DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -15,10 +15,10 @@ public class DateOperationRequest {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date to;
 
-    public DateOperationRequest() {
+    public DateValidationRequest() {
     }
 
-    public DateOperationRequest(Date from, Date to) {
+    public DateValidationRequest(Date from, Date to) {
         this.from = from;
         this.to = to;
     }

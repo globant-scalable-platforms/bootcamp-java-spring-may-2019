@@ -1,17 +1,17 @@
-package com.bootcamp.restchallenge.controller.model;
+package com.bootcamp.restchallenge.controller.model.datevalidation;
 
 import java.util.Date;
 
-public class DateOperationResponse {
+public class DateValidationResponse {
 
     private Date from;
     private Date to;
     private boolean result;
 
-    public DateOperationResponse() {
+    public DateValidationResponse() {
     }
 
-    public DateOperationResponse(Date from, Date to, boolean result) {
+    public DateValidationResponse(Date from, Date to, boolean result) {
         this.from = from;
         this.to = to;
         this.result = result;
