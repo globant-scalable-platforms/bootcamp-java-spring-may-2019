@@ -143,6 +143,84 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Test get product by Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "56bbc702-82cd-4d0f-9a2b-8d23e62bfc13",
+						"exec": [
+							"pm.test(\"response has status code ok\", function(){",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// Test taken from Postman Test Scripts documentation",
+							"pm.test(\"response must be valid and have a body\", function(){",
+							"    pm.response.to.be.ok;",
+							"    pm.response.to.be.withBody;",
+							"    pm.response.to.be.json;",
+							"});",
+							"",
+							"pm.test(\"validate response body\", function(){",
+							"    pm.expect(pm.response.json().id).to.equal(\"P435\");",
+							"    pm.expect(pm.response.json().name).to.equal(\"Product 1\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/P435",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P435"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test get product with invalid Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c627b471-a440-4da7-b34d-13d2461c8e92",
+						"exec": [
+							"pm.test(\"status code for non existent Id\", function(){",
+							"    pm.response.to.have.status(500);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/P450",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P450"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
