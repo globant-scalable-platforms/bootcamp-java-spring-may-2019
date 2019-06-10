@@ -7,22 +7,24 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import davidAcuna.domain.Account;
+import davidAcuna.domain.Student;
 
 @Component
 public class DataSource {
 	
 	private static List<Account> accounts = new ArrayList<>();
+	private static List<Student> students = new ArrayList<>();
 	
 	public DataSource(){		
-		Account account_1 = new Account("David", "123456");
-		Account account_2 = new Account("Alberto", "654321");
-		Account account_3 = new Account("Daniel", "789012");
-		Account account_4 = new Account("Andres", "210987");
+		accounts.add(new Account("David", "123456"));
+		accounts.add(new Account("Alberto", "654321"));
+		accounts.add(new Account("Daniel", "789012"));
+		accounts.add(new Account("Andres", "210987"));
 		
-		accounts.add(account_1);
-		accounts.add(account_2);
-		accounts.add(account_3);
-		accounts.add(account_4);
+		students.add(new Student("David", 12345678, 23));
+		students.add(new Student("David", 987654, 24));
+		students.add(new Student("Andres", 97538064, 19));
+		students.add(new Student("Carlos", 6763898, 30));
 	}
 
 	public Account retrieveUserInformation(String username) {
@@ -33,6 +35,10 @@ public class DataSource {
 		
 		return account != null ? new Account(username, account.getPassword()) : null;
 		
+	}
+	
+	public List<Student> getStudents() {		
+		return students;		
 	}
 	
 }

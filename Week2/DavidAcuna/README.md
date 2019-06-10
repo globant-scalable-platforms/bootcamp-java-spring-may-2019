@@ -1,3 +1,10 @@
+------- KATAS ---------
+
+DI and Application Context: 
+/authenticate/{username}/{password}
+Validate user
+ 
+
 GAME: Once all attempts have finished the winner is detemine using streams in the method determineWinner(...) of GameImp.
 It returns a POJO GameStatus with the following information:
 status: A message with the attempts of each player and the global attempts of the game.
@@ -12,3 +19,19 @@ Perform play with player one and show status of the game
 
 /game/player-two
 Perform play with player two and show status of the game
+
+------- REST CHALLENGES ---------
+
+/restChallenges/dateValidation/{fromDate}/{toDate}
+Validate if to date if greater than from date
+
+/restChallenges/roleValidation
+Validate if a header called “roles” contains the “admin” role
+
+/restChallenges/numbersOps
+Receives a file of numbers separated by commas and converts into a list
+
+/restChallenges/students
+/restChallenges/students?name=David&age=23&identification=12345678
+/restChallenges/students?name=David
+Filter out a list of students by name, identification and age or any of these
