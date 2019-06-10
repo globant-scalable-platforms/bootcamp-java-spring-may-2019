@@ -46,16 +46,14 @@ public class SpringRestChallenges {
     @GetMapping(value = "/dateValidation/{fromDate}/{toDate}")
     public ResponseEntity<Boolean> validateDates(@PathVariable ("fromDate") @DateTimeFormat(pattern = "dd-MM-yyyy") @Valid Date fromDate, 
     		@PathVariable ("toDate") @DateTimeFormat(pattern = "dd-MM-yyyy") @Valid Date toDate) throws BadRangeOfDatesException{        
-    	try {    	
+    	    	
     		Boolean isValid = springRestChallengesImpl.after(fromDate, toDate);
     		if(!isValid) {
     			throw new BadRangeOfDatesException("From Date id greater than To Date");
     		}
      		return ResponseEntity.status(HttpStatus.OK)
     				.body(isValid);
-		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
-		}
+		
     } 
     
     /**
