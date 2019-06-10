@@ -1,18 +1,12 @@
-package com.globant.bootcamp.spring.Rest.Roles;
+package com.globant.bootcamp.spring.Rest.Students;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
 @SpringBootApplication
-public class RoleRestKataApplication {
+public class StudentApplication {
 
     public static void main(String [] args){
-        SpringApplication.run(RoleRestKataApplication.class);
+        SpringApplication.run(StudentApplication.class);
     }
-
 }
-
-
-

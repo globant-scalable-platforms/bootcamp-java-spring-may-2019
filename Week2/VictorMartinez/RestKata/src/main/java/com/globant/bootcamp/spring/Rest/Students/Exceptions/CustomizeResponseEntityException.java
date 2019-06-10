@@ -1,6 +1,6 @@
-package com.globant.bootcamp.spring.Rest.Roles.Exception;
+package com.globant.bootcamp.spring.Rest.Students.Exceptions;
 
-import org.apache.coyote.Response;
+import com.globant.bootcamp.spring.Rest.Roles.Exception.ExceptionResponses;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.Date;
+
+
 
 @ControllerAdvice
 @RestController
-public class CustomizeResponseEntityExceptionHandler  extends ResponseEntityExceptionHandler {
+public class CustomizeResponseEntityException extends ResponseEntityExceptionHandler {
 
-
-    @ExceptionHandler(Exception.class)
+   @ExceptionHandler(Exception.class)
     public final ResponseEntity<Object> handlerAllExceptions(Exception ex, WebRequest request) throws Exception{
 
         ExceptionResponses exceptionResponse = new ExceptionResponses(new Date(), ex.getMessage(),
