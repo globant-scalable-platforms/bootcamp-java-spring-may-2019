@@ -34,4 +34,4 @@ Receives a file of numbers separated by commas and converts into a list
 /restChallenges/students
 /restChallenges/students?name=David&age=23&identification=12345678
 /restChallenges/students?name=David
-Filter out a list of students by name, identification and age or any of these
+Filter out a list of students by name, identification and age or any of these.
