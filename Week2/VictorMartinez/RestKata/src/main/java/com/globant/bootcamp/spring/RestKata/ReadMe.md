@@ -11,3 +11,7 @@ A Service was implemented with the following Uri distribution according to the d
       - /dateController/yy-mm-dd_hh:mm-:s/{fromDate}/{toDate} : date format "yy-mm-dd_hh:mm:ss"
       
       - /dateController/yy-mm-dd/{fromDate}/{toDate}          : date format "yy-mm-dd"
+
+Heres an example of the Service Conceived.
+
+![alt text](https://github.com/globant-scalable-platforms/bootcamp-java-spring-may-2019/blob/VictorMartinez_Week2_Bootcam/Week2/VictorMartinez/AuxFiles/dateExercise.png?raw=true)
