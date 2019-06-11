@@ -43,18 +43,18 @@ public class SpringRestChallenges {
 	 * 
 	 * @return  true if to date is greater than from date, exception otherwise
 	 */
-    @GetMapping(value = "/dateValidation/{fromDate}/{toDate}")
-    public ResponseEntity<Boolean> validateDates(@PathVariable ("fromDate") @DateTimeFormat(pattern = "dd-MM-yyyy") @Valid Date fromDate, 
-    		@PathVariable ("toDate") @DateTimeFormat(pattern = "dd-MM-yyyy") @Valid Date toDate) throws BadRangeOfDatesException{        
-    	    	
-    		Boolean isValid = springRestChallengesImpl.after(fromDate, toDate);
-    		if(!isValid) {
-    			throw new BadRangeOfDatesException("From Date id greater than To Date");
-    		}
-     		return ResponseEntity.status(HttpStatus.OK)
-    				.body(isValid);
-		
-    } 
+	@GetMapping(value = "/dateValidation/{fromDate}/{toDate}")
+	public ResponseEntity<Boolean> validateDates(
+			@PathVariable("fromDate") @DateTimeFormat(pattern = "dd-MM-yyyy") @Valid Date fromDate,
+			@PathVariable("toDate") @DateTimeFormat(pattern = "dd-MM-yyyy") @Valid Date toDate)
+			throws BadRangeOfDatesException {
+
+		if (!springRestChallengesImpl.after(fromDate, toDate)) {
+			throw new BadRangeOfDatesException("From Date id greater than To Date");
+		}
+		return ResponseEntity.status(HttpStatus.OK).body(springRestChallengesImpl.after(fromDate, toDate));
+
+	}
     
     /**
    	 * Validate if a header called “roles” contains the “admin” role
