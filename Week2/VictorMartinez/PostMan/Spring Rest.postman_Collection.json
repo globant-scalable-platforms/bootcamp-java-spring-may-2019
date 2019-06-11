@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "c97cf0d1-2170-4478-a15b-1622a961c9c7",
+		"name": "Spring Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f21503be-8949-4bb6-8104-55be0244ef6f",
+						"exec": [
+							"let nameProduct1 = pm.variables.get(\"nameProduct1\")",
+							"let nameProduct2 = pm.variables.get(\"nameProduct2\")",
+							"",
+							"//Check if Body has these Products as a response",
+							"",
+							"pm.test(\"Checking Product 1\", function(){",
+							"    pm.expect(pm.response.text()).to.include(nameProduct1)",
+							"})",
+							"",
+							"",
+							"pm.test(\"Checking Product 2\", function(){",
+							"    pm.expect(pm.response.text()).to.include(nameProduct2)",
+							"})",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P835\",\n        \"name\": \"Product 5\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4394fa7f-0ca8-4ad3-bcb6-65f9f7c9b10d",
+						"exec": [
+							"let item2 = pm.environment.set(\"item2\",\"P435\")",
+							"item2 = pm.environment.set(\"item2\",\"P552\")"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a6789661-9e7e-47f2-8b97-b0e3e949b7d3",
+						"exec": [
+							"let itemValue = pm.variables.get(\"item2\")",
+							"",
+							"if (itemValue ==\"P435\"){ console.log(\"P435\")}",
+							"if (itemValue ==\"P552\"){ console.log(\"P552\")}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}{{items}}/{{item2}}",
+					"host": [
+						"{{url}}{{items}}"
+					],
+					"path": [
+						"{{item2}}"
+					]
+				},
+				"description": "Getting One Product by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Name",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2361585e-da26-450e-bae8-453b71828b2e",
+						"exec": [
+							"let name1 = pm.environment.set(\"name1\", \"Product_1\")"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "27470219-d5a2-4fc7-80f5-7aa9baa24a10",
+						"exec": [
+							"let result = pm.environment.get(\"name\")",
+							"",
+							"console.log(result)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}{{items}}{{filter}}{{nameArgs}}{{name1}}",
+					"host": [
+						"{{url}}{{items}}{{filter}}{{nameArgs}}{{name1}}"
+					]
+				},
+				"description": "Filtering applied to Products List based on a name"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Product 3\",\n\t\"id\"  :\"P436\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}{{items}}",
+					"host": [
+						"{{url}}{{items}}"
+					]
+				},
+				"description": "Add a Product{\n\t\"name\" = \"\",\n\t\"id\"   = \"\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Product",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8011a9c0-54a3-4f1c-a10c-8ea934411e7a",
+						"exec": [
+							"let id = pm.environment.set(\"id\", \"P552\")"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Product 4\",\n\t\"id\"  : \"P436\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}{{items}}/{{id}}",
+					"host": [
+						"{{url}}{{items}}"
+					],
+					"path": [
+						"{{id}}"
+					]
+				},
+				"description": "Updating a Product Name through it's ID\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8ae2a4cb-2eae-4011-9642-6537453830f3",
+						"exec": [
+							"let id = pm.environment.set(\"id\", \"P436\")"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}{{items}}/{{id}}",
+					"host": [
+						"{{url}}{{items}}"
+					],
+					"path": [
+						"{{id}}"
+					]
+				},
+				"description": "Delete a Product By ID\n"
+			},
+			"response": []
+		}
+	]
+}
