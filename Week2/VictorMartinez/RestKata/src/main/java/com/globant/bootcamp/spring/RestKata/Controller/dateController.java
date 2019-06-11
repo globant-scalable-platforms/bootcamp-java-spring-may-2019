@@ -37,7 +37,7 @@ public class dateController {
     public String isToDateBiggerFromDate_DateFormat(@Valid @PathVariable String fromDate, @PathVariable String toDate) {
 
         return askMe(fromDate, toDate)+sendMessage(
-                converDate2Long(toDate)>converDate2Long(fromDate),
+                converDate2Long(toDate)<converDate2Long(fromDate),
                 fromDate,
                 toDate
         );
