@@ -1,5 +1,5 @@
 # Solution
-To do this kata I created a interface named "DataSource" with the method:
+To do this kata I created an interface named "DataSource" with the method:
 ```java
 public interface DataSource {
 	Account retrieveAccountInformation(String username);
