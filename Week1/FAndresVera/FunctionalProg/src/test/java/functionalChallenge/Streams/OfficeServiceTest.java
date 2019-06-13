@@ -3,10 +3,13 @@ package functionalChallenge.Streams;
 import functionalChallenge.Streams.domain.Element;
 import functionalChallenge.Streams.domain.Office;
 import functionalChallenge.Streams.domain.Table;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
+
+import static org.hamcrest.CoreMatchers.is;
 
 
 public class OfficeServiceTest {
@@ -25,7 +28,9 @@ public class OfficeServiceTest {
 
     @Test
     public void first7ElementsOrdered() {
-        // code goes here !
+
+        OfficeService officeS = new OfficeService();
+        Assert.assertThat(officeS.retrieveAllElements(office).toString(), is("[Cable, Mouse, Paper, folder, food, headphones, iphone]"));
 
     }
 }

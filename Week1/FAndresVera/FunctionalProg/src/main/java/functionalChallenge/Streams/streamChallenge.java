@@ -8,8 +8,7 @@ public class streamChallenge {
 
     public Integer sum(List<Integer> list){
         Stream<Integer> sum = list.stream();
-        Integer suma = sum.reduce(0, (a, b) -> a+b);
-        return suma;
+        return sum.reduce(0, (a, b) -> a+b);
     }
 
     public<E> List<E> getListWithoutDuplicate(List<E> list){
