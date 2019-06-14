@@ -9,7 +9,10 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import static org.mockito.ArgumentMatchers.any;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
@@ -37,6 +40,9 @@ public abstract class BaseClass {
 
 		Mockito.when(customerService.findCustomerById(1L))
 				.thenReturn(new Customer(1L, "Mike", "Castro"));
+
+		Mockito.when(customerService.addCustomer(any(Customer.class)))
+				.thenReturn(true);
 	}
 
 }

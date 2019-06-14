@@ -29,12 +29,9 @@ public class CustomerEndpoint {
 
 	@PostMapping("/customer")
 	public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer){
-		customerService.addCustomer(customer);
-		return new ResponseEntity<>(customer, HttpStatus.CREATED);
-
-		/*if(customerService.addCustomer(customer).is2xxSuccessful())
+		if(customerService.addCustomer(customer))
 			return new ResponseEntity<>(customer, HttpStatus.CREATED);
 
-		return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);*/
+		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 	}
 }

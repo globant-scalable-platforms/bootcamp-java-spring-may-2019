@@ -1,10 +1,12 @@
 package com.glb.bootcamp.service;
 
-import java.util.*;
-
 import com.glb.bootcamp.model.Customer;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Service
 public class CustomerService {
@@ -22,12 +24,12 @@ public class CustomerService {
 		return customers.get(id);
 	}
 
-	public HttpStatus addCustomer(Customer customer){
+	public boolean addCustomer(Customer customer){
 		if(!customers.containsKey(customer.getId())){
 			customers.put(customer.getId(), customer);
-			return HttpStatus.CREATED;
+			return true;
 		}
-		return HttpStatus.BAD_REQUEST;
+		return false;
 	}
 
 	public List<Customer> getCustomersList() {
