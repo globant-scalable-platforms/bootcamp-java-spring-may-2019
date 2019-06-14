@@ -3,6 +3,7 @@ package com.glb.bootcamp;
 import com.glb.bootcamp.endpoint.CustomerEndpoint;
 import com.glb.bootcamp.model.Customer;
 import com.glb.bootcamp.service.CustomerService;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -10,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
 /**
  * To verify an API provider (the Spring controller in our case), Spring Cloud Contract automatically generates JUnit
@@ -37,6 +36,9 @@ public abstract class BaseClass {
 
 		Mockito.when(customerService.findCustomerById(1L))
 				.thenReturn(new Customer(1L, "Mike", "Castro"));
+
+		Mockito.when(customerService.createNewCustomer("Nicolás", "Sastoque"))
+				.thenReturn(new Customer(4L, "Nicolás", "Sastoque"));
 	}
 
 }
