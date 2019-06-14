@@ -21,4 +21,15 @@ public class CustomerService {
     public Customer findCustomerById(Long id) {
         return customers.get(id);
     }
+
+    public Customer createCustomer(String name, String surname) {
+        final Long id = findNextId();
+        final Customer customer = new Customer(id, name, surname);
+        customers.put(id, customer);
+        return customer;
+    }
+
+    private Long findNextId() {
+        return (long) customers.size() + 1;
+    }
 }
