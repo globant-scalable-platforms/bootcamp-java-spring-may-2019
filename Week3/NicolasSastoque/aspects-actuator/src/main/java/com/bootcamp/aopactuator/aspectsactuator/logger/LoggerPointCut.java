@@ -1,4 +1,4 @@
-package com.bootcamp.aopactuator.aspectsactuator.aspect;
+package com.bootcamp.aopactuator.aspectsactuator.logger;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

@@ -8,4 +8,9 @@ public class BatchFacade implements Command{
     public String execute() {
         return "Success";
     }
+
+    @Override
+    public String secondExecute() {
+        return "Success with secondExecute";
+    }
 }
