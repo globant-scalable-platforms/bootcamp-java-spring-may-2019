@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.stubrunner.junit.StubRunnerRule;
 import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
@@ -36,5 +37,20 @@ public class ContractRestClientApplicationTest {
 		BDDAssertions.then(entity.getBody().getName()).isEqualTo("Mike");
 		BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Castro");
 		
+	}
+
+	@Test
+	public void create_new_customer_from_service_contract() {
+
+		RestTemplate restTemplate = new RestTemplate();
+		Customer customer = new Customer(4L, "Nicolás", "Sastoque");
+
+		ResponseEntity<Customer> entity = restTemplate.postForEntity("http://localhost:8100/customer", customer, Customer.class);
+
+		BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(201);
+		BDDAssertions.then(entity.getBody().getId()).isEqualTo(4L);
+		BDDAssertions.then(entity.getBody().getName()).isEqualTo("Nicolás");
+		BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Sastoque");
+
 	}
 }
