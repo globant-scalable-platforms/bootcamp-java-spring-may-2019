@@ -37,4 +37,20 @@ public class ContractRestClientApplicationTest {
         BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Castro");
 
     }
+
+    @Test
+    public void create_customer_from_service_contract() {
+        // given:
+        RestTemplate restTemplate = new RestTemplate();
+
+        // when:
+        ResponseEntity<Customer> entity = restTemplate.getForEntity("http://localhost:8100/customer", Customer.class);
+
+        // then:
+        BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
+        BDDAssertions.then(entity.getBody().getId()).isEqualTo(4l);
+        BDDAssertions.then(entity.getBody().getName()).isEqualTo("Santi");
+        BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Vasquez");
+
+    }
 }
