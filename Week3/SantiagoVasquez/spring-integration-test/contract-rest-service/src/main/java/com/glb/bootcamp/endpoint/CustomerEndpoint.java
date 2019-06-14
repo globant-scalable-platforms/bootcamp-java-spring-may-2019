@@ -5,6 +5,8 @@ import com.glb.bootcamp.model.Customer;
 import com.glb.bootcamp.service.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 @RestController
 public class CustomerEndpoint {
 
@@ -20,7 +22,7 @@ public class CustomerEndpoint {
     }
 
     @PostMapping("/customer")
-    public Customer createCustomer(@RequestBody CustomerRequest body) {
+    public Customer createCustomer(@RequestBody @Valid CustomerRequest body) {
         return customerService.createCustomer(body.getName(), body.getSurname());
     }
 }

@@ -13,7 +13,7 @@ Contract.make {
         }
         body(
                 name: "Santi",
-                surename: "Vasquez",
+                surname: "Vasquez"
         )
     }
 
