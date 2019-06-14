@@ -32,3 +32,6 @@ Week1/Gradle/multi-project/greeter/.settings/org.eclipse.buildship.core.prefs
 Week1/Gradle/multi-project/greeter/.project
 Week1/Gradle/multi-project/docs/.settings/org.eclipse.buildship.core.prefs
 Week1/.vscode/launch.json
+Week2/Spring/spring-core/.project
+Week2/Spring REST/spring-core/.project
+Week2/Spring REST/spring-core/bin/.project
