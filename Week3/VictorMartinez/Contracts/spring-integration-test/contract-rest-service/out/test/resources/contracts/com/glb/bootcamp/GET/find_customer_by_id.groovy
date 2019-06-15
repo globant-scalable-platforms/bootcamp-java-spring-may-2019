@@ -1,4 +1,4 @@
-package com.glb.bootcamp
+package com.glb.bootcamp.GET
 
 import org.springframework.cloud.contract.spec.Contract
 
@@ -6,7 +6,7 @@ Contract.make {
 	description "should return customer by id=1"
 
 	request {
-		url "/customer/1"
+		url "/customer/id/1"
 		method GET()
 	}
 
@@ -16,9 +16,9 @@ Contract.make {
 			contentType applicationJson()
 		}
 		body (
-			id: 1,
-			name: "Mike",
-			surname: "Castro"
+				id: 1,
+				name: "Mike",
+				surname: "Castro"
 		)
 	}
 }

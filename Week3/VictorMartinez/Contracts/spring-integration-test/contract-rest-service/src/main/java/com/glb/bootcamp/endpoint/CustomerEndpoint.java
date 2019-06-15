@@ -15,8 +15,13 @@ public class CustomerEndpoint {
 		this.customerService = customerService;
 	}
 
-	@GetMapping("/customer/{id}")
+	@GetMapping(value = "/customer/id/{id}")
 	public Customer findCustomerById(@PathVariable("id") Long id) {
 		return customerService.findCustomerById(id);
+	}
+
+	@GetMapping(value = "/customer/name/{name}")
+	public Customer findCustomerById(@PathVariable("name") String userName) {
+		return customerService.findCustomerByName(userName);
 	}
 }

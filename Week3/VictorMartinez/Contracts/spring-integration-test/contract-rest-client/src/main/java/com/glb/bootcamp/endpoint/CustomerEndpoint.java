@@ -16,10 +16,17 @@ public class CustomerEndpoint {
         this.restTemplate = restTemplateBuilder.build();
     }
 
-    @RequestMapping("/customer/{customerId}")
+    @RequestMapping("/customer/id/{customerId}")
     public String getCustomer(@PathVariable("customerId") Long customerId) {
         Customer customer =
-                this.restTemplate.getForObject("http://localhost:8000/customer/{customerId}", Customer.class, customerId);
+                this.restTemplate.getForObject("http://localhost:8000/customer/id/{customerId}", Customer.class, customerId);
+        return "Welcome " + customer.getName();
+    }
+
+    @RequestMapping("/customer/name/{customerName}")
+    public String getCustomer(@PathVariable("customerName") String customerName) {
+        Customer customer =
+                this.restTemplate.getForObject("http://localhost:8000/customer/name/{customerName}", Customer.class, customerName);
         return "Welcome " + customer.getName();
     }
 

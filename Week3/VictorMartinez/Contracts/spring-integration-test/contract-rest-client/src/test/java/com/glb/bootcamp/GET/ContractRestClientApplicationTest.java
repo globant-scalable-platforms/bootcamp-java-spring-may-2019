@@ -1,4 +1,4 @@
-package com.glb.bootcamp;
+package com.glb.bootcamp.GET;
 
 import com.glb.bootcamp.model.Customer;
 import org.assertj.core.api.BDDAssertions;
@@ -28,7 +28,7 @@ public class ContractRestClientApplicationTest {
 		RestTemplate restTemplate = new RestTemplate();
 		
 		// when:
-		ResponseEntity<Customer> entity = restTemplate.getForEntity("http://localhost:8100/customer/1", Customer.class);
+		ResponseEntity<Customer> entity = restTemplate.getForEntity("http://localhost:8100/customer/id/1", Customer.class);
 
 		// then:
 		BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
