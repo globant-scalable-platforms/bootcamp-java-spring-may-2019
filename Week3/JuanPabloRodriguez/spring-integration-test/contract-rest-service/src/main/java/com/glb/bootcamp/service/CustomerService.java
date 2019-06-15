@@ -21,4 +21,14 @@ public class CustomerService {
 	public Customer findCustomerById(Long id) {
 		return customers.get(id);
 	}
+
+	public boolean addCustomer(Customer customer){
+		if(customers.containsKey(customer.getId())) {
+			return false;
+		}
+		else{
+			customers.put(customer.getId(), customer);
+			return true;
+		}
+	}
 }
