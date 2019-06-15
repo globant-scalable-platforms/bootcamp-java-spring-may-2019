@@ -32,6 +32,10 @@ repositories { mavenCentral() }
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.springframework.boot:spring-boot-starter-actuator")
+	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.8'
+	compile group: 'org.springframework.data', name: 'spring-data-rest-hal-browser', version: '3.0.8.RELEASE'
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.cloud:spring-cloud-starter-contract-verifier')
 }
