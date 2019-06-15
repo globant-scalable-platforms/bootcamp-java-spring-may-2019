@@ -22,7 +22,7 @@ public class CustomerEndpoint {
 
 	@PostMapping("/customer")
 	public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer){
-		if(customerService.addCustomer(customer)) {
+		if(customerService.addCustomer(customer) != null) {
 			return new ResponseEntity<>(customer, HttpStatus.CREATED);
 		}
 
