@@ -22,13 +22,13 @@ public class CustomerService {
 		return customers.get(id);
 	}
 
-	public Long addCustomer(Customer customer){
+	public Customer addCustomer(Customer customer){
 		if(customers.containsKey(customer.getId())) {
 			return null;
 		}
 		else{
 			customers.put(customer.getId(), customer);
-			return customer.getId();
+			return customer;
 		}
 	}
 }

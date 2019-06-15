@@ -33,7 +33,7 @@ public class ContractRestClientApplicationTest {
 
 		// then:
 		BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
-		BDDAssertions.then(entity.getBody().getId()).isEqualTo(1l);
+		BDDAssertions.then(entity.getBody().getId()).isEqualTo(1L);
 		BDDAssertions.then(entity.getBody().getName()).isEqualTo("Mike");
 		BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Castro");
 		
@@ -51,9 +51,9 @@ public class ContractRestClientApplicationTest {
 
 		// then:
 		BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(201);
-		BDDAssertions.then(entity.getBody().getId()).isEqualTo(1l);
+		BDDAssertions.then(entity.getBody().getId()).isEqualTo(4L);
 		BDDAssertions.then(entity.getBody().getName()).isEqualTo("James");
 		BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Rodriguez");
-		
+
 	}
 }
