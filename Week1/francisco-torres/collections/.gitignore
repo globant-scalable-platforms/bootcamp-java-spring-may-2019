@@ -1,0 +1,8 @@
+# Ignore idea files
+*.iml
+.idea
+
+# Ignore idea build output directory
+out
+
+

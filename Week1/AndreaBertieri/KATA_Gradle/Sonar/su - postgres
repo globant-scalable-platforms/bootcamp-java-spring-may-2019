@@ -1,0 +1,9 @@
+[0;1;32m●[0m postgresql.service - PostgreSQL RDBMS
+   Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (exited)[0m since Sun 2019-06-02 20:48:40 -05; 3min 6s ago
+ Main PID: 3705 (code=exited, status=0/SUCCESS)
+    Tasks: 0 (limit: 4915)
+   CGroup: /system.slice/postgresql.service
+
+jun 02 20:48:40 javandseb-120-1184la systemd[1]: Starting PostgreSQL RDBMS...
+jun 02 20:48:40 javandseb-120-1184la systemd[1]: Started PostgreSQL RDBMS.

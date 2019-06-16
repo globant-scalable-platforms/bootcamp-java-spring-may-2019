@@ -1,0 +1,311 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+			"name": "Spring Rest",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [
+				"9f21937b-47a5-4018-aa14-ad0826ee1891",
+				"f320e546-c59a-4dc0-a15e-8ea88b19f3ea",
+				"cc2c61f1-2270-4d99-86fe-c3a53d0008bb",
+				"315e6e5d-3cd6-4523-9bdd-ed622f49fc83",
+				"ce6a34e0-66de-4b7a-b1ff-5a4f9eb9c45f",
+				"a2a2bf12-c3bb-433e-9f1c-df18ed56e9a4"
+			],
+			"folders_order": [],
+			"folders": [],
+			"requests": [
+				{
+					"id": "315e6e5d-3cd6-4523-9bdd-ed622f49fc83",
+					"name": "Get Product filter",
+					"url": "{{host}}:8080/products/filter?name=Product 1",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [
+						{
+							"key": "name",
+							"value": "Product 1",
+							"equals": true,
+							"description": "",
+							"enabled": true
+						}
+					],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9bce00db-ab8a-4bb7-8a87-87f1c568016c",
+								"exec": [
+									"pm.test(\"Check if product id is P435\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData[0].id).to.eql(\"P435\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "pm.test(\"Check if product id is P435\", function () {\r\n    var jsonData = pm.response.json();\r\n    pm.expect(jsonData[0].id).to.eql(\"P435\");\r\n});",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "9f21937b-47a5-4018-aa14-ad0826ee1891",
+					"name": "Get All Product",
+					"url": "{{host}}:8080/products",
+					"description": null,
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "37ce962e-8de1-401a-8546-6aefd3085fb4",
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Product 1\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "pm.test(\"Body matches string\", function () {\r\n    pm.expect(pm.response.text()).to.include(\"Product 1\");\r\n});",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "a2a2bf12-c3bb-433e-9f1c-df18ed56e9a4",
+					"name": "Delete Product by ID",
+					"url": "{{host}}:8080/products/{{id2}}",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ea7ae266-c85d-4682-a098-4b706dfd9419",
+								"exec": [
+									"pm.test(\"Content-Length is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Length\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "pm.test(\"Content-Length is present\", function () {\r\n    pm.response.to.have.header(\"Content-Length\");\r\n});",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "cc2c61f1-2270-4d99-86fe-c3a53d0008bb",
+					"name": "Get Product by ID",
+					"url": "{{host}}:8080/products/{{id1}}",
+					"description": "",
+					"data": null,
+					"dataMode": null,
+					"headerData": [],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7d43ecd3-c404-48b9-857d-38f728a06f2d",
+								"exec": [
+									"pm.test(\"Check if product name is Product 1\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.name).to.eql(\"Product 1\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "pm.test(\"Check if product name is Product 1\", function () {\r\n    var jsonData = pm.response.json();\r\n    pm.expect(jsonData.name).to.eql(\"Product 1\");\r\n});",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+					"headers": "",
+					"pathVariables": {}
+				},
+				{
+					"id": "ce6a34e0-66de-4b7a-b1ff-5a4f9eb9c45f",
+					"name": "Put Product by ID",
+					"url": "{{host}}:8080/products/{{id1}}",
+					"description": "",
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "891d526f-b34d-4d29-8796-e2cb2bd1ee3d",
+								"exec": [
+									"pm.test(\"Response time is less than 50ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(50);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "pm.test(\"Response time is less than 50ms\", function () {\r\n    pm.expect(pm.response.responseTime).to.be.below(50);\r\n});",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+					"rawModeData": "{\n        \"id\": \"P435\",\n        \"name\": \"Product 1 new\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "f320e546-c59a-4dc0-a15e-8ea88b19f3ea",
+					"name": "Save Product",
+					"url": "{{host}}:8080/products/",
+					"description": null,
+					"data": [],
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": null,
+					"events": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1c5b1b4a-7977-4740-9dd8-f782ce46df15",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"folder": null,
+					"preRequestScript": null,
+					"tests": "pm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});",
+					"currentHelper": null,
+					"helperAttributes": null,
+					"collectionId": "db5486e2-6d9c-4306-abec-bb1b16dd03b2",
+					"rawModeData": "{\n        \"id\": \"P835\",\n        \"name\": \"Product 5\"\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "997aa1ec-cd35-4e06-ada8-6dbd81d32d32",
+			"name": "Environment 2",
+			"values": [
+				{
+					"key": "host",
+					"value": "127.0.0.1",
+					"enabled": true
+				},
+				{
+					"key": "id1",
+					"value": "P552",
+					"enabled": true
+				},
+				{
+					"key": "id2",
+					"value": "P435",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "dba31060-01bf-44d5-8af1-c2e13d6e2569",
+			"name": "Enviroment 1",
+			"values": [
+				{
+					"key": "host",
+					"value": "localhost",
+					"enabled": true
+				},
+				{
+					"key": "id1",
+					"value": "P435",
+					"enabled": true
+				},
+				{
+					"key": "id2",
+					"value": "P552",
+					"enabled": true
+				}
+			]
+		},
+		{
+			"id": "be2cadd5-91f4-4937-b90a-3e6e532e02f2",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}
