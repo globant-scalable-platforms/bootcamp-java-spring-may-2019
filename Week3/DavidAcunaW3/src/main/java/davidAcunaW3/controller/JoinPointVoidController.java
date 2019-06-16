@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import davidAcunaW3.configuration.BatchFacade;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
+@Api(value="JoinPointVoidController", description = "Test a joinPoint with void method")
 @RestController
 public class JoinPointVoidController {
 
@@ -18,6 +23,11 @@ public class JoinPointVoidController {
 		this.batchFacade = batchFacade;
 	}
 
+	@ApiOperation(value="Test a joinPoint with void method", tags="voidTest")
+	@ApiResponses(value = {
+		@ApiResponse(code = 200, message = "Success|OK"),
+		@ApiResponse(code = 500, message = "Error|INTERNAL_SERVER_ERROR")
+	})
 	@GetMapping(value = "/voidTest", produces = "text/plain")
 	public ResponseEntity<String> executeBatch() {
 		try {
