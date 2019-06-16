@@ -1,54 +1,43 @@
-# Ignore old/changing intellij project files and directories
-*.iml
-*.iws
-*.ipr
-*.ids
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
 *.log
-.idea
 
-# Ignore compiler output
-target/
-out/
+# BlueJ files
+*.ctxt
 
-# Ignore Gradle build output
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### Gradle ###
+.gradle
 build/
-.gradle/
 
-# Ignore log files
-logs/
+# Ignore Gradle GUI config
+gradle-app.setting
 
-# Ignore performance-tests output
-performance-tests/target
-bin/reports
-bin/loadtesting/analysisScripts/results
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
 
-#ignore deployable war files
-bin/*.war
+# Cache of project
+.gradletasknamecache
 
-docs/src/main/webapp/src/docs
-docs/src/main/webapp/src/docs/*.json
-docs/src/main/webapp/src/docs-intl
-docs/src/main/webapp/src/docs-intl/*.json
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
 
-# Ignore TCServer Instances
-tcserver/
-
-# Ignore Build Temp
-build_tmp/
-gradle-common/
-
-# Ignore Rundeck Temp for deploy temp files
-rundeck_tmp/
-
-# Ignore Mountebank pidfile
-mb.pid
-
-# Ignore emacs auto-save files
-*~
-
-classes
-
-# Ignore temporary file created by prundeck script
-args.txt
-
-artifacts/
+### Gradle Patch ###
+**/build/
