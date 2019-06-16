@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("dev")
-public class MessageDev implements Message {
+@Profile("default")
+public class MessageDefault implements Message {
 
     @Value("${app.message}")
     String message;
