@@ -1,13 +1,12 @@
 package com.glb.bootcamp.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("default")
-public class MessageDefault implements Message{
+@Profile("prod")
+public class MessageProd implements Message {
 
     @Value("${app.message}")
     String message;
