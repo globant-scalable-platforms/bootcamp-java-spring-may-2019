@@ -22,9 +22,9 @@ public class Swagger2DemoController {
 
 	private List<Glober> globers = new ArrayList<>();
 	{
-		globers.add(new Glober("Alejo", "SP", "COL"));
-		globers.add(new Glober("Lucho", "SP", "COL"));
-		globers.add(new Glober("William", "BD", "USA"));
+		globers.add(new Glober("1", "Alejo", "SP", "COL"));
+		globers.add(new Glober("2", "Lucho", "SP", "COL"));
+		globers.add(new Glober("3", "William", "BD", "USA"));
 	}
 
 	@ApiOperation(value = "Get list of Globers in the System ", response = Iterable.class, tags = "getGlobers")
@@ -61,5 +61,21 @@ public class Swagger2DemoController {
 	@RequestMapping(value = "/addGlober",method = RequestMethod.POST)
 	public void addGlober(@RequestBody Glober glober) {
 		globers.add(glober);
+	}
+
+	@ApiOperation(value = "Update specific Glober By id ",response = Glober.class,tags="putGlober")
+	@RequestMapping(value = "/putGlober/{id}", method = RequestMethod.PUT)
+	public void putGlober(@RequestBody Glober glober, @PathVariable(value = "id") String id) {
+		Glober myGlober = globers.stream().filter(x -> x.getId().equalsIgnoreCase(id)).collect(Collectors.toList()).get(0);
+		myGlober.setName(glober.getName());
+		myGlober.setCountry(glober.getCountry());
+		myGlober.setStudio(glober.getStudio());
+	}
+
+	@ApiOperation(value = "Delete specific Glober By id ",response = Glober.class,tags="deleteGlober")
+	@RequestMapping(value = "/deleteGlober/{id}", method = RequestMethod.DELETE)
+	public void deleteGlober(@PathVariable(value = "id") String id) {
+		Glober myGlober = globers.stream().filter(x -> x.getId().equalsIgnoreCase(id)).collect(Collectors.toList()).get(0);
+		globers.remove(myGlober);
 	}
 }
