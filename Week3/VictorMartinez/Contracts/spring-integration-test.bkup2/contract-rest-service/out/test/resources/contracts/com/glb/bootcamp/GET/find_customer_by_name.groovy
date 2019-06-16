@@ -1,13 +1,13 @@
-package com.glb.bootcamp.POST
+package com.glb.bootcamp.GET
 
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-    description "should add a new customer by id, id = 4"
+    description "should return customer by name = Mauro"
 
     request {
-        url "/customer/id/4"
-        method POST()
+        url "/customer/name/Mike"
+        method GET()
     }
 
     response {
@@ -16,9 +16,9 @@ Contract.make {
             contentType applicationJson()
         }
         body (
-                id: 4,
-                name: "William",
-                surname: "Diaz"
+                id: 1,
+                name: "Mike",
+                surname: "Castro"
         )
     }
 }

@@ -1,10 +1,13 @@
 package com.glb.bootcamp.service;
 
-import java.util.*;
-import java.util.stream.Collectors;
-
 import com.glb.bootcamp.model.Customer;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Service
 public class CustomerService {
@@ -29,5 +32,9 @@ public class CustomerService {
 				.map(Map.Entry::getKey)
 				.collect(Collectors.toList());
 		return customers.get(filteredKeyMap.get(0));
+	}
+
+	public Map<Long, Customer> getCustomers(){
+		return this.customers;
 	}
 }
