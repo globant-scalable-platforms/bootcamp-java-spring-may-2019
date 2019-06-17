@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "ceb1558e-0d44-4c78-846c-56cb519692f1",
+		"name": "Spring Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5836ce28-cb91-44fd-ae76-a5fd323b98df",
+						"exec": [
+							"pm.environment.set(\"prod-id\", \"P435\");",
+							"",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Return at least one product\", function() {",
+							"   pm.expect(pm.response.json().length).to.be.above(0);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/{{resource}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{resource}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get product by id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "43a66700-1077-4785-8a14-213ce6644bfd",
+						"exec": [
+							"pm.environment.set(\"prod-id\", \"P435\");",
+							"",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Product is returned by id\", function() {",
+							"   pm.expect(pm.response.json().id).to.equal(pm.environment.get(\"prod-id\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/{{resource}}/{{prod-id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{resource}}",
+						"{{prod-id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5210e4c7-406f-400a-af82-9c7f2649b811",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.eql(200);",
+							"});",
+							"",
+							"pm.test(\"Return an empty body\", function() {",
+							"   pm.expect(responseBody.length).to.be.eql(0);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"{{code-letter}}835\", \n        \"name\": \"{{prefix-product}} {{initial-digit}}55\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/{{resource}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"{{resource}}",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Missed endpoint #1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P577\",\n        \"name\": \"Apple\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/product",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"product"
+					]
+				},
+				"description": "post request to a non-existent resource"
+			},
+			"response": []
+		},
+		{
+			"name": "Missed endpoint #2",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P577\",\n        \"name\": \"Banana\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/products",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"products"
+					]
+				},
+				"description": "request with no support method"
+			},
+			"response": []
+		}
+	]
+}
