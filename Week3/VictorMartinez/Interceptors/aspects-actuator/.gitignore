@@ -1,0 +1,54 @@
+# Ignore old/changing intellij project files and directories
+*.iml
+*.iws
+*.ipr
+*.ids
+*.log
+.idea
+
+# Ignore compiler output
+target/
+out/
+
+# Ignore Gradle build output
+build/
+.gradle/
+
+# Ignore log files
+logs/
+
+# Ignore performance-tests output
+performance-tests/target
+bin/reports
+bin/loadtesting/analysisScripts/results
+
+#ignore deployable war files
+bin/*.war
+
+docs/src/main/webapp/src/docs
+docs/src/main/webapp/src/docs/*.json
+docs/src/main/webapp/src/docs-intl
+docs/src/main/webapp/src/docs-intl/*.json
+
+# Ignore TCServer Instances
+tcserver/
+
+# Ignore Build Temp
+build_tmp/
+gradle-common/
+
+# Ignore Rundeck Temp for deploy temp files
+rundeck_tmp/
+
+# Ignore Mountebank pidfile
+mb.pid
+
+# Ignore emacs auto-save files
+*~
+
+classes
+
+# Ignore temporary file created by prundeck script
+args.txt
+
+artifacts/
