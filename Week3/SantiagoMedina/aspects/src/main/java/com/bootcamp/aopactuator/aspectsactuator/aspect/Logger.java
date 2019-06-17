@@ -11,12 +11,12 @@ public class Logger {
 	
     @Before("execution(* com.bootcamp.aopactuator.aspectsactuator.aspect.Command.execute(..))")
     public void loggIn(){
-        System.out.println("entro ");
+        //System.out.println("entro ");
     }
 
     @After("execution(* com.bootcamp.aopactuator.aspectsactuator.aspect.Command.execute(..))")
     public void loggInAfter(){
-        System.out.println("salio ");
+        //System.out.println("salio ");
     }
 
 

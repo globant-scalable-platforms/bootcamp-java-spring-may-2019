@@ -17,7 +17,7 @@ public class LoggerRound {
 
     @Around( value = "execute()")
     public String loggerInOut(ProceedingJoinPoint jp){
-        System.out.println("Around In");
+        //System.out.println("Around In");
         String value ="";
         long start = System.nanoTime();
         try {  	
@@ -27,8 +27,8 @@ public class LoggerRound {
             System.out.println("Error "+throwable.getMessage());
         }
         long end = System.nanoTime();
-        System.out.println("Time (Miliseconds) LoggerRound: " + ((end - start)/1000000));
-        System.out.println("Around Out");
+        System.out.println("Time (Miliseconds) Execute method: " + ((end - start)/1000000));
+        //System.out.println("Around Out");
         return value;
     }
 }

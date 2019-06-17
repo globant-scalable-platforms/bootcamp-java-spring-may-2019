@@ -15,11 +15,11 @@ public class LoggerPointCut {
 
     @Before("execute()")
     public void loggIn(){
-        System.out.println("entro 2");
+        //System.out.println("entro 2");
     }
 
     @After("execute()")
     public void loggInAfter(){
-        System.out.println("salio 2");
+        //System.out.println("salio 2");
     }
 }

@@ -16,16 +16,16 @@ public class LoggerAll {
 
 	@Around( value = "execute()")
     public String loggerInOut(ProceedingJoinPoint jp){
-        System.out.println("Logger All Around In");
+        System.out.println("Before method");
         String value ="";
         try {  	
-        	System.out.println(jp.getSignature().getDeclaringTypeName());
+        	System.out.println("class name: " + jp.getSignature().getDeclaringTypeName());
             value =  (String) jp.proceed();
             
         } catch (Throwable throwable) {
             System.out.println("Error "+throwable.getMessage());
         }
-        System.out.println("Logger All Around Out");
+        System.out.println("After method");
         return value;
     }
 
