@@ -1,0 +1,36 @@
+buildscript {
+	ext { 
+		springBootVersion = '2.1.4.RELEASE' 
+		verifierVersion = '2.1.1.RELEASE'
+	}
+	repositories { mavenCentral() }
+	dependencies { 
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
+	}
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+
+group 'com.globant.bootcamp'
+version = '0.0.1-SNAPSHOT'
+bootJar {
+	baseName = 'swagger'
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories { mavenCentral() }
+
+dependencies {
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
+	compile('org.springframework.boot:spring-boot-starter-web')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
