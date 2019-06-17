@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'DavidAcunaW3'
+include 'contract-rest-service-boot'
+include 'contract-rest-client-boot'
