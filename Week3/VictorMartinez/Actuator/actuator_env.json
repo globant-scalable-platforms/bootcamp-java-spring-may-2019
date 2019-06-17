@@ -1,0 +1,439 @@
+{
+  "activeProfiles": [],
+  "propertySources": [
+    {
+      "name": "server.ports",
+      "properties": {
+        "local.server.port": {
+          "value": 8080
+        }
+      }
+    },
+    {
+      "name": "servletContextInitParams",
+      "properties": {}
+    },
+    {
+      "name": "systemProperties",
+      "properties": {
+        "PID": {
+          "value": "23560"
+        },
+        "awt.toolkit": {
+          "value": "sun.awt.X11.XToolkit"
+        },
+        "catalina.base": {
+          "value": "/tmp/tomcat.4109201516594563870.8080"
+        },
+        "catalina.home": {
+          "value": "/tmp/tomcat.4109201516594563870.8080"
+        },
+        "catalina.useNaming": {
+          "value": "false"
+        },
+        "file.encoding": {
+          "value": "UTF-8"
+        },
+        "file.separator": {
+          "value": "/"
+        },
+        "java.awt.graphicsenv": {
+          "value": "sun.awt.X11GraphicsEnvironment"
+        },
+        "java.awt.headless": {
+          "value": "true"
+        },
+        "java.awt.printerjob": {
+          "value": "sun.print.PSPrinterJob"
+        },
+        "java.class.path": {
+          "value": "/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week3/VictorMartinez/Interceptors/aspects-actuator/out/production/classes:/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week3/VictorMartinez/Interceptors/aspects-actuator/out/production/resources:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.1.5.RELEASE/d46494b46a626cbd8f253066a2d7413412efc908/spring-boot-starter-web-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.1.5.RELEASE/464cfb573009e724ea76ca404f106b1b19e759ff/spring-boot-starter-aop-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/2.1.5.RELEASE/4abebc4ec0ee87155bfa8daf6a9d63366308e58a/spring-boot-starter-actuator-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-hal-browser/3.1.8.RELEASE/1e0703ffda90c1886c807dc9e727b6a4afbb1362/spring-data-rest-hal-browser-3.1.8.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.1.5.RELEASE/cf880b4a4713b2a1aea21f929df718a0260aa29/spring-boot-starter-json-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.1.5.RELEASE/74952d169c2da56f7794b3a88508e52005bb8f36/spring-boot-starter-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.1.5.RELEASE/49de1c20ea6b8c6920d0a66329f9bf980e4498eb/spring-boot-starter-tomcat-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.16.Final/ad9557c558972093c0567a2a1f224f318c00f650/hibernate-validator-6.0.16.Final.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-webmvc/3.1.8.RELEASE/c956836ca6de40a67b2e731864a8090a5aeb63af/spring-data-rest-webmvc-3.1.8.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-rest-core/3.1.8.RELEASE/3fe696738a0544b4f63ae058035da22a4bdf6e25/spring-data-rest-core-3.1.8.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.25.1.RELEASE/13b2399725d2c925376b11e8ff95e08ae558e795/spring-hateoas-0.25.1.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.7.RELEASE/686326ff513bf4e852b3ee359cf741d92ab82cfe/spring-webmvc-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.7.RELEASE/595dd528ec66eccc6cf4375ea3b56f3605fa1d1f/spring-web-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.1.5.RELEASE/4e6774d2f4a70e62092dbaace39190f8b1df8083/spring-boot-actuator-autoconfigure-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.5.RELEASE/69ae2819b295603563b95f79abae53f2631c5b94/spring-boot-autoconfigure-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.1.5.RELEASE/eccd3c70cfbe9534db19fbdd6cbf86fab884c3c0/spring-boot-actuator-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.5.RELEASE/939061a385b4e30e115978d78a7412fb984674df/spring-boot-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.2.0.RELEASE/f380e7760032e7d929184f8ad8a33716b75c0657/spring-plugin-core-1.2.0.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.7.RELEASE/b4154d41a70c56eeca42974825fe64a8576642dd/spring-context-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.1.7.RELEASE/8138b5e3dd01d514741de35d7f5050599c617509/spring-aop-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.4/9205229878f3d62fbd3a32a0fb6be2d6ad8589a9/aspectjweaver-1.9.4.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-core/1.1.4/96eabfe2343a4a4676d215b2122cbbc4d4b6af9b/micrometer-core-1.1.4.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.1.5.RELEASE/b4fe11fb0e606b67b9fb2bd9ae4fe65b484445dd/spring-boot-starter-logging-2.1.5.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.11.2/6d37bf7b046c0ce2669f26b99365a2cfa45c4c18/log4j-to-slf4j-2.11.2.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.26/8031352b2bb0a49e67818bf04c027aa92e645d5c/jul-to-slf4j-1.7.26.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.8.RELEASE/d68b9a9850ee21319469c40bdbdfe4eaaf29557/spring-data-commons-2.1.8.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.7.RELEASE/d437d5d353312d94206b469b43e203eba1bdcec6/spring-tx-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.7.RELEASE/14cd651e4aa3514e75710c9450c7a0c89413e63f/spring-beans-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.1.7.RELEASE/7b47446553c83a5a7323d647f5c1793106b2948c/spring-expression-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.7.RELEASE/280f821b9ed4dad9993f1d551d6e86557092ae58/spring-core-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.8/bcd02aa9195390e23747ed40bf76be869ad3a2fb/jackson-datatype-jdk8-2.9.8.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.8/28ad1bced632ba338e51c825a652f6e11a8e6eac/jackson-datatype-jsr310-2.9.8.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.23/ec62d74fe50689c28c0ff5b35d3aebcaa8b5be68/snakeyaml-1.23.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.9.8/c4eef0e6e20d60fb27af4bc4770dba7bcc3f6de6/jackson-module-parameter-names-2.9.8.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.8/11283f21cc480aa86c4df7a0a3243ec508372ed2/jackson-databind-2.9.8.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.19/dee79022818f490203f4901f5651f3233aee14db/tomcat-embed-websocket-9.0.19.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.19/56e42e12bf92b713befd0700430f7c5c0af68d49/tomcat-embed-core-9.0.19.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/9.0.19/6145f2cd11c7df4ad9463637087c0f7e8e673394/tomcat-embed-el-9.0.19.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.4.0/291658ac2ce2476256c7115943652c0accb5c857/classmate-1.4.0.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.9/e4631ce165eb400edecfa32e03d3f1be53dee754/HdrHistogram-2.1.9.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.latencyutils/LatencyUtils/2.0.3/769c0b82cb2421c8256300e907298a9410a2a3d3/LatencyUtils-2.0.3.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.7.RELEASE/6b14bfb9ae41ca1bc604fe2e78f4a6efa3d67002/spring-jcl-5.1.7.RELEASE.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.8/f5a654e4675769c716e5b387830d19b501ca191/jackson-core-2.9.8.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.atteo/evo-inflector/1.2.2/2551aad98d65ac5464d81fe05f0e1516cfe471c9/evo-inflector-1.2.2.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/home/rocks/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.2/f5e9a2ffca496057d6891a3de65128efc636e26e/log4j-api-2.11.2.jar"
+        },
+        "java.class.version": {
+          "value": "55.0"
+        },
+        "java.home": {
+          "value": "/usr/lib/jvm/java-11-openjdk-amd64"
+        },
+        "java.io.tmpdir": {
+          "value": "/tmp"
+        },
+        "java.library.path": {
+          "value": "/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"
+        },
+        "java.runtime.name": {
+          "value": "OpenJDK Runtime Environment"
+        },
+        "java.runtime.version": {
+          "value": "11.0.3+7-Ubuntu-1ubuntu218.04.1"
+        },
+        "java.specification.name": {
+          "value": "Java Platform API Specification"
+        },
+        "java.specification.vendor": {
+          "value": "Oracle Corporation"
+        },
+        "java.specification.version": {
+          "value": "11"
+        },
+        "java.vendor": {
+          "value": "Oracle Corporation"
+        },
+        "java.vendor.url": {
+          "value": "http://java.oracle.com/"
+        },
+        "java.vendor.url.bug": {
+          "value": "http://bugreport.java.com/bugreport/"
+        },
+        "java.version": {
+          "value": "11.0.3"
+        },
+        "java.version.date": {
+          "value": "2019-04-16"
+        },
+        "java.vm.compressedOopsMode": {
+          "value": "Zero based"
+        },
+        "java.vm.info": {
+          "value": "mixed mode, sharing"
+        },
+        "java.vm.name": {
+          "value": "OpenJDK 64-Bit Server VM"
+        },
+        "java.vm.specification.name": {
+          "value": "Java Virtual Machine Specification"
+        },
+        "java.vm.specification.vendor": {
+          "value": "Oracle Corporation"
+        },
+        "java.vm.specification.version": {
+          "value": "11"
+        },
+        "java.vm.vendor": {
+          "value": "Oracle Corporation"
+        },
+        "java.vm.version": {
+          "value": "11.0.3+7-Ubuntu-1ubuntu218.04.1"
+        },
+        "jdk.debug": {
+          "value": "release"
+        },
+        "line.separator": {
+          "value": "\n"
+        },
+        "os.arch": {
+          "value": "amd64"
+        },
+        "os.name": {
+          "value": "Linux"
+        },
+        "os.version": {
+          "value": "4.15.0-50-generic"
+        },
+        "path.separator": {
+          "value": ":"
+        },
+        "spring.beaninfo.ignore": {
+          "value": "true"
+        },
+        "sun.arch.data.model": {
+          "value": "64"
+        },
+        "sun.boot.library.path": {
+          "value": "/usr/lib/jvm/java-11-openjdk-amd64/lib"
+        },
+        "sun.cpu.endian": {
+          "value": "little"
+        },
+        "sun.cpu.isalist": {
+          "value": ""
+        },
+        "sun.desktop": {
+          "value": "gnome"
+        },
+        "sun.io.unicode.encoding": {
+          "value": "UnicodeLittle"
+        },
+        "sun.java.command": {
+          "value": "******"
+        },
+        "sun.java.launcher": {
+          "value": "SUN_STANDARD"
+        },
+        "sun.jnu.encoding": {
+          "value": "UTF-8"
+        },
+        "sun.management.compiler": {
+          "value": "HotSpot 64-Bit Tiered Compilers"
+        },
+        "sun.os.patch.level": {
+          "value": "unknown"
+        },
+        "user.country": {
+          "value": "US"
+        },
+        "user.dir": {
+          "value": "/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week3/VictorMartinez/Interceptors/aspects-actuator"
+        },
+        "user.home": {
+          "value": "/home/rocks"
+        },
+        "user.language": {
+          "value": "en"
+        },
+        "user.name": {
+          "value": "rocks"
+        },
+        "user.timezone": {
+          "value": "America/Bogota"
+        }
+      }
+    },
+    {
+      "name": "systemEnvironment",
+      "properties": {
+        "ANDROID_AVD_HOME": {
+          "origin": "System Environment Property \"ANDROID_AVD_HOME\"",
+          "value": "/root/.android/avd"
+        },
+        "CLUTTER_IM_MODULE": {
+          "origin": "System Environment Property \"CLUTTER_IM_MODULE\"",
+          "value": "xim"
+        },
+        "DBUS_SESSION_BUS_ADDRESS": {
+          "origin": "System Environment Property \"DBUS_SESSION_BUS_ADDRESS\"",
+          "value": "unix:path=/run/user/1000/bus"
+        },
+        "DEFAULTS_PATH": {
+          "origin": "System Environment Property \"DEFAULTS_PATH\"",
+          "value": "/usr/share/gconf/ubuntu.default.path"
+        },
+        "DESKTOP_SESSION": {
+          "origin": "System Environment Property \"DESKTOP_SESSION\"",
+          "value": "ubuntu"
+        },
+        "DISPLAY": {
+          "origin": "System Environment Property \"DISPLAY\"",
+          "value": ":0"
+        },
+        "GDMSESSION": {
+          "origin": "System Environment Property \"GDMSESSION\"",
+          "value": "ubuntu"
+        },
+        "GIO_LAUNCHED_DESKTOP_FILE": {
+          "origin": "System Environment Property \"GIO_LAUNCHED_DESKTOP_FILE\"",
+          "value": "/usr/share/applications/jetbrains-idea-ce.desktop"
+        },
+        "GIO_LAUNCHED_DESKTOP_FILE_PID": {
+          "origin": "System Environment Property \"GIO_LAUNCHED_DESKTOP_FILE_PID\"",
+          "value": "6906"
+        },
+        "GJS_DEBUG_OUTPUT": {
+          "origin": "System Environment Property \"GJS_DEBUG_OUTPUT\"",
+          "value": "stderr"
+        },
+        "GJS_DEBUG_TOPICS": {
+          "origin": "System Environment Property \"GJS_DEBUG_TOPICS\"",
+          "value": "JS ERROR;JS LOG"
+        },
+        "GNOME_DESKTOP_SESSION_ID": {
+          "origin": "System Environment Property \"GNOME_DESKTOP_SESSION_ID\"",
+          "value": "this-is-deprecated"
+        },
+        "GNOME_SHELL_SESSION_MODE": {
+          "origin": "System Environment Property \"GNOME_SHELL_SESSION_MODE\"",
+          "value": "ubuntu"
+        },
+        "GPG_AGENT_INFO": {
+          "origin": "System Environment Property \"GPG_AGENT_INFO\"",
+          "value": "/run/user/1000/gnupg/S.gpg-agent:0:1"
+        },
+        "GTK_IM_MODULE": {
+          "origin": "System Environment Property \"GTK_IM_MODULE\"",
+          "value": "ibus"
+        },
+        "GTK_MODULES": {
+          "origin": "System Environment Property \"GTK_MODULES\"",
+          "value": "gail:atk-bridge"
+        },
+        "HOME": {
+          "origin": "System Environment Property \"HOME\"",
+          "value": "/home/rocks"
+        },
+        "IM_CONFIG_PHASE": {
+          "origin": "System Environment Property \"IM_CONFIG_PHASE\"",
+          "value": "2"
+        },
+        "LANG": {
+          "origin": "System Environment Property \"LANG\"",
+          "value": "en_US.UTF-8"
+        },
+        "LC_ADDRESS": {
+          "origin": "System Environment Property \"LC_ADDRESS\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_IDENTIFICATION": {
+          "origin": "System Environment Property \"LC_IDENTIFICATION\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_MEASUREMENT": {
+          "origin": "System Environment Property \"LC_MEASUREMENT\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_MONETARY": {
+          "origin": "System Environment Property \"LC_MONETARY\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_NAME": {
+          "origin": "System Environment Property \"LC_NAME\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_NUMERIC": {
+          "origin": "System Environment Property \"LC_NUMERIC\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_PAPER": {
+          "origin": "System Environment Property \"LC_PAPER\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_TELEPHONE": {
+          "origin": "System Environment Property \"LC_TELEPHONE\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LC_TIME": {
+          "origin": "System Environment Property \"LC_TIME\"",
+          "value": "es_CO.UTF-8"
+        },
+        "LOGNAME": {
+          "origin": "System Environment Property \"LOGNAME\"",
+          "value": "rocks"
+        },
+        "MANDATORY_PATH": {
+          "origin": "System Environment Property \"MANDATORY_PATH\"",
+          "value": "/usr/share/gconf/ubuntu.mandatory.path"
+        },
+        "OLDPWD": {
+          "origin": "System Environment Property \"OLDPWD\"",
+          "value": "/opt/idea-IC-191.7479.19/bin"
+        },
+        "PATH": {
+          "origin": "System Environment Property \"PATH\"",
+          "value": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+        },
+        "PWD": {
+          "origin": "System Environment Property \"PWD\"",
+          "value": "/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week3/VictorMartinez/Interceptors/aspects-actuator"
+        },
+        "QT4_IM_MODULE": {
+          "origin": "System Environment Property \"QT4_IM_MODULE\"",
+          "value": "xim"
+        },
+        "QT_ACCESSIBILITY": {
+          "origin": "System Environment Property \"QT_ACCESSIBILITY\"",
+          "value": "1"
+        },
+        "QT_IM_MODULE": {
+          "origin": "System Environment Property \"QT_IM_MODULE\"",
+          "value": "ibus"
+        },
+        "SESSION_MANAGER": {
+          "origin": "System Environment Property \"SESSION_MANAGER\"",
+          "value": "local/rocks:@/tmp/.ICE-unix/1512,unix/rocks:/tmp/.ICE-unix/1512"
+        },
+        "SHELL": {
+          "origin": "System Environment Property \"SHELL\"",
+          "value": "/bin/bash"
+        },
+        "SHLVL": {
+          "origin": "System Environment Property \"SHLVL\"",
+          "value": "0"
+        },
+        "SSH_AGENT_PID": {
+          "origin": "System Environment Property \"SSH_AGENT_PID\"",
+          "value": "1608"
+        },
+        "SSH_AUTH_SOCK": {
+          "origin": "System Environment Property \"SSH_AUTH_SOCK\"",
+          "value": "/run/user/1000/keyring/ssh"
+        },
+        "TEXTDOMAIN": {
+          "origin": "System Environment Property \"TEXTDOMAIN\"",
+          "value": "im-config"
+        },
+        "TEXTDOMAINDIR": {
+          "origin": "System Environment Property \"TEXTDOMAINDIR\"",
+          "value": "/usr/share/locale/"
+        },
+        "USER": {
+          "origin": "System Environment Property \"USER\"",
+          "value": "rocks"
+        },
+        "USERNAME": {
+          "origin": "System Environment Property \"USERNAME\"",
+          "value": "rocks"
+        },
+        "WINDOWPATH": {
+          "origin": "System Environment Property \"WINDOWPATH\"",
+          "value": "2"
+        },
+        "XAUTHORITY": {
+          "origin": "System Environment Property \"XAUTHORITY\"",
+          "value": "/run/user/1000/gdm/Xauthority"
+        },
+        "XDG_CONFIG_DIRS": {
+          "origin": "System Environment Property \"XDG_CONFIG_DIRS\"",
+          "value": "/etc/xdg/xdg-ubuntu:/etc/xdg"
+        },
+        "XDG_CURRENT_DESKTOP": {
+          "origin": "System Environment Property \"XDG_CURRENT_DESKTOP\"",
+          "value": "ubuntu:GNOME"
+        },
+        "XDG_DATA_DIRS": {
+          "origin": "System Environment Property \"XDG_DATA_DIRS\"",
+          "value": "/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop"
+        },
+        "XDG_MENU_PREFIX": {
+          "origin": "System Environment Property \"XDG_MENU_PREFIX\"",
+          "value": "gnome-"
+        },
+        "XDG_RUNTIME_DIR": {
+          "origin": "System Environment Property \"XDG_RUNTIME_DIR\"",
+          "value": "/run/user/1000"
+        },
+        "XDG_SEAT": {
+          "origin": "System Environment Property \"XDG_SEAT\"",
+          "value": "seat0"
+        },
+        "XDG_SESSION_DESKTOP": {
+          "origin": "System Environment Property \"XDG_SESSION_DESKTOP\"",
+          "value": "ubuntu"
+        },
+        "XDG_SESSION_ID": {
+          "origin": "System Environment Property \"XDG_SESSION_ID\"",
+          "value": "2"
+        },
+        "XDG_SESSION_TYPE": {
+          "origin": "System Environment Property \"XDG_SESSION_TYPE\"",
+          "value": "x11"
+        },
+        "XDG_VTNR": {
+          "origin": "System Environment Property \"XDG_VTNR\"",
+          "value": "2"
+        },
+        "XMODIFIERS": {
+          "origin": "System Environment Property \"XMODIFIERS\"",
+          "value": "@im=ibus"
+        }
+      }
+    },
+    {
+      "name": "applicationConfig: [classpath:/application.properties]",
+      "properties": {
+        "management.endpoints.web.exposure.include": {
+          "origin": "class path resource [application.properties]:1:43",
+          "value": "*"
+        }
+      }
+    }
+  ]
+}

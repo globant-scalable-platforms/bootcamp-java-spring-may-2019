@@ -1,0 +1,4524 @@
+{
+  "traces": [
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/httptrace"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:21:10 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 68,
+      "timestamp": "2019-06-17T16:21:10.750494Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:21:08 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 3,
+      "timestamp": "2019-06-17T16:21:08.162908Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/scheduledtasks"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:20:29 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 8,
+      "timestamp": "2019-06-17T16:20:29.702045Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/scheduledtasks"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:20:18 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 14,
+      "timestamp": "2019-06-17T16:20:18.818265Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:20:14 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 5,
+      "timestamp": "2019-06-17T16:20:14.827002Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/metrics"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:19:47 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 5,
+      "timestamp": "2019-06-17T16:19:47.580911Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/metrics"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:19:37 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 8,
+      "timestamp": "2019-06-17T16:19:37.060044Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:19:34 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 3,
+      "timestamp": "2019-06-17T16:19:34.630504Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/threaddump"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:18:45 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 47,
+      "timestamp": "2019-06-17T16:18:45.419115Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/threaddump"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:18:36 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 91,
+      "timestamp": "2019-06-17T16:18:36.632242Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:18:32 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 5,
+      "timestamp": "2019-06-17T16:18:32.228965Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/heapdump"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "46038379"
+          ],
+          "Content-Type": [
+            "application/octet-stream"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:18:05 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 1265,
+      "timestamp": "2019-06-17T16:18:04.398756Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:18:00 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 7,
+      "timestamp": "2019-06-17T16:18:00.027976Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/loggers"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:17:23 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 23,
+      "timestamp": "2019-06-17T16:17:23.476852Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/loggers"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:17:16 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 29,
+      "timestamp": "2019-06-17T16:17:16.558075Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/info"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:16:53 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 4,
+      "timestamp": "2019-06-17T16:16:53.317742Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "purpose": [
+            "prefetch"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:16:51 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 5,
+      "timestamp": "2019-06-17T16:16:51.288533Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/info"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:16:43 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 11,
+      "timestamp": "2019-06-17T16:16:43.953234Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:16:39 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 7,
+      "timestamp": "2019-06-17T16:16:39.420594Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/env"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:16:11 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 23,
+      "timestamp": "2019-06-17T16:16:11.486056Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/env"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:16:01 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 37,
+      "timestamp": "2019-06-17T16:16:01.264085Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:15:58 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 3,
+      "timestamp": "2019-06-17T16:15:58.088951Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/configprops"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:15:06 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 35,
+      "timestamp": "2019-06-17T16:15:06.906003Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/configprops"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:14:56 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 354,
+      "timestamp": "2019-06-17T16:14:55.647309Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/conditions"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:14:14 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 23,
+      "timestamp": "2019-06-17T16:14:14.284822Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/conditions"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:13:56 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 92,
+      "timestamp": "2019-06-17T16:13:56.769743Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:13:50 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 6,
+      "timestamp": "2019-06-17T16:13:50.936311Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/health"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:13:21 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 9,
+      "timestamp": "2019-06-17T16:13:21.617520Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/health"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:13:12 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 30,
+      "timestamp": "2019-06-17T16:13:12.068811Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/caches"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:12:34 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 12,
+      "timestamp": "2019-06-17T16:12:34.842892Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:12:25 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 6,
+      "timestamp": "2019-06-17T16:12:25.758953Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/auditevents"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:11:46 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 3,
+      "timestamp": "2019-06-17T16:11:46.069149Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/auditevents"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:11:34 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 10,
+      "timestamp": "2019-06-17T16:11:34.310755Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/self"
+      },
+      "response": {
+        "headers": {},
+        "status": 404
+      },
+      "session": null,
+      "timeTaken": 41,
+      "timestamp": "2019-06-17T16:11:27.721526Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:11:19 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 5,
+      "timestamp": "2019-06-17T16:11:19.151595Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:11:14 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 3,
+      "timestamp": "2019-06-17T16:11:14.947172Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/hal+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:11:08 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 8,
+      "timestamp": "2019-06-17T16:11:08.897842Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/"
+      },
+      "response": {
+        "headers": {
+          "Location": [
+            "http://localhost:8080/browser/index.html#/"
+          ]
+        },
+        "status": 302
+      },
+      "session": null,
+      "timeTaken": 16,
+      "timestamp": "2019-06-17T16:11:08.514313Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/beans"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:06:53 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 41,
+      "timestamp": "2019-06-17T16:06:53.525934Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:04:15 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 4,
+      "timestamp": "2019-06-17T16:04:15.431892Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:03:38 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 4,
+      "timestamp": "2019-06-17T16:03:38.966907Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/profile"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/hal+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:03:18 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 23,
+      "timestamp": "2019-06-17T16:03:18.720448Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/hal+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:03:12 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 27,
+      "timestamp": "2019-06-17T16:03:12.243580Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator/beans"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:52 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 83,
+      "timestamp": "2019-06-17T16:02:52.691013Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:44 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 6,
+      "timestamp": "2019-06-17T16:02:44.030668Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "image/webp,image/apng,image/*,*/*;q=0.8"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/vendor/css/bootstrap.css"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/img/glyphicons-halflings.png"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "12799"
+          ],
+          "Content-Type": [
+            "image/png"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 24,
+      "timestamp": "2019-06-17T16:02:37.988515Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "application/hal+json, application/json, */*; q=0.01"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ],
+          "x-requested-with": [
+            "XMLHttpRequest"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/hal+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 94,
+      "timestamp": "2019-06-17T16:02:37.867404Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "image/webp,image/apng,image/*,*/*;q=0.8"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/styles.css"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/img/ajax-loader.gif"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1849"
+          ],
+          "Content-Type": [
+            "image/gif"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 12,
+      "timestamp": "2019-06-17T16:02:37.871906Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/jsoneditor.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "222365"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 42,
+      "timestamp": "2019-06-17T16:02:37.772773Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/response_body.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1221"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 57,
+      "timestamp": "2019-06-17T16:02:37.749202Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/CustomPostForm.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "5028"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 19,
+      "timestamp": "2019-06-17T16:02:37.779171Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/non_safe_request_dialog.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1437"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 73,
+      "timestamp": "2019-06-17T16:02:37.717085Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/documentation.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "171"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 20,
+      "timestamp": "2019-06-17T16:02:37.761491Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/response_headers.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "658"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 47,
+      "timestamp": "2019-06-17T16:02:37.731919Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/response.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "554"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 37,
+      "timestamp": "2019-06-17T16:02:37.732024Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/embedded_resource.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1651"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 44,
+      "timestamp": "2019-06-17T16:02:37.715297Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/query_uri_dialog.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "2091"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 26,
+      "timestamp": "2019-06-17T16:02:37.722923Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/embedded_resources.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "937"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 51,
+      "timestamp": "2019-06-17T16:02:37.683411Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/properties.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "2737"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 52,
+      "timestamp": "2019-06-17T16:02:37.670146Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/links.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1320"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 50,
+      "timestamp": "2019-06-17T16:02:37.666100Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/request_headers.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "717"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 59,
+      "timestamp": "2019-06-17T16:02:37.656597Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/resource.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1184"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 57,
+      "timestamp": "2019-06-17T16:02:37.640833Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/navigation.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "505"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 63,
+      "timestamp": "2019-06-17T16:02:37.631497Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/inspector.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "868"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 39,
+      "timestamp": "2019-06-17T16:02:37.628327Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/location_bar.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "976"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 20,
+      "timestamp": "2019-06-17T16:02:37.640797Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/explorer.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "557"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 37,
+      "timestamp": "2019-06-17T16:02:37.619037Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/http/client.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1398"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 36,
+      "timestamp": "2019-06-17T16:02:37.613903Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/resource.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1152"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 57,
+      "timestamp": "2019-06-17T16:02:37.580245Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/views/browser.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "736"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 37,
+      "timestamp": "2019-06-17T16:02:37.597157Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal/browser.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1425"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 43,
+      "timestamp": "2019-06-17T16:02:37.584467Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/bootstrap.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "61752"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 70,
+      "timestamp": "2019-06-17T16:02:37.554793Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/js/hal.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "2448"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 35,
+      "timestamp": "2019-06-17T16:02:37.562546Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/URI.min.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "42708"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 55,
+      "timestamp": "2019-06-17T16:02:37.514400Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/underscore.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "41426"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 117,
+      "timestamp": "2019-06-17T16:02:37.443621Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/backbone.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "55476"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 101,
+      "timestamp": "2019-06-17T16:02:37.451657Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/uritemplates.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "11969"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 75,
+      "timestamp": "2019-06-17T16:02:37.477868Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/js/jquery-1.10.2.min.js"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "93107"
+          ],
+          "Content-Type": [
+            "application/javascript"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 86,
+      "timestamp": "2019-06-17T16:02:37.438589Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/css,*/*;q=0.1"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/css/bootstrap.css"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "127247"
+          ],
+          "Content-Type": [
+            "text/css"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 104,
+      "timestamp": "2019-06-17T16:02:37.414741Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/css,*/*;q=0.1"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/vendor/css/bootstrap-responsive.css"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "22111"
+          ],
+          "Content-Type": [
+            "text/css"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 85,
+      "timestamp": "2019-06-17T16:02:37.415351Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/css,*/*;q=0.1"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "referer": [
+            "http://localhost:8080/browser/index.html"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/styles.css"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "1286"
+          ],
+          "Content-Type": [
+            "text/css"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 39,
+      "timestamp": "2019-06-17T16:02:37.417756Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/browser/index.html"
+      },
+      "response": {
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "9933"
+          ],
+          "Content-Type": [
+            "text/html"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:37 GMT"
+          ],
+          "Last-Modified": [
+            "Mon, 17 Jun 2019 13:28:06 GMT"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 51,
+      "timestamp": "2019-06-17T16:02:37.334377Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/"
+      },
+      "response": {
+        "headers": {
+          "Location": [
+            "http://localhost:8080/browser/index.html#/"
+          ]
+        },
+        "status": 302
+      },
+      "session": null,
+      "timeTaken": 37,
+      "timestamp": "2019-06-17T16:02:37.288281Z"
+    },
+    {
+      "principal": null,
+      "request": {
+        "headers": {
+          "accept": [
+            "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3"
+          ],
+          "accept-encoding": [
+            "gzip, deflate, br"
+          ],
+          "accept-language": [
+            "es,en;q=0.9,pt;q=0.8,fr;q=0.7,de-DE;q=0.6,de;q=0.5"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "cookie": [
+            "username-localhost-8888=\"2|1:0|10:1558389405|23:username-localhost-8888|44:NTg5YWE4MWVmNjkzNDgxYzkwNjEyMGQwZTY0M2VhYTc=|9355e312b09478bb5a16fbcded80e2fc74777ecd0875b12e2be80b00f21f387d\"; Idea-2f5d700b=de93fe07-4939-4501-bf0c-e17200e39f52"
+          ],
+          "host": [
+            "localhost:8080"
+          ],
+          "purpose": [
+            "prefetch"
+          ],
+          "upgrade-insecure-requests": [
+            "1"
+          ],
+          "user-agent": [
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+          ]
+        },
+        "method": "GET",
+        "remoteAddress": null,
+        "uri": "http://localhost:8080/actuator"
+      },
+      "response": {
+        "headers": {
+          "Content-Type": [
+            "application/vnd.spring-boot.actuator.v2+json;charset=UTF-8"
+          ],
+          "Date": [
+            "Mon, 17 Jun 2019 16:02:22 GMT"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "status": 200
+      },
+      "session": null,
+      "timeTaken": 163,
+      "timestamp": "2019-06-17T16:02:22.395039Z"
+    }
+  ]
+}

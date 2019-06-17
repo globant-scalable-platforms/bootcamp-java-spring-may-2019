@@ -18,7 +18,6 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.5.RELEASE'
 // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '2.1.5.RELEASE'
-
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.data:spring-data-rest-hal-browser'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

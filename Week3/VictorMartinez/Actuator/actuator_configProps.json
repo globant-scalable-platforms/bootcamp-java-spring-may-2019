@@ -1,0 +1,377 @@
+{
+  "contexts": {
+    "application": {
+      "beans": {
+        "diskSpaceHealthIndicatorProperties": {
+          "prefix": "management.health.diskspace",
+          "properties": {
+            "path": "/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week3/VictorMartinez/Interceptors/aspects-actuator/.",
+            "threshold": {}
+          }
+        },
+        "management.endpoint.configprops-org.springframework.boot.actuate.autoconfigure.context.properties.ConfigurationPropertiesReportEndpointProperties": {
+          "prefix": "management.endpoint.configprops",
+          "properties": {}
+        },
+        "management.endpoint.env-org.springframework.boot.actuate.autoconfigure.env.EnvironmentEndpointProperties": {
+          "prefix": "management.endpoint.env",
+          "properties": {}
+        },
+        "management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties": {
+          "prefix": "management.endpoint.health",
+          "properties": {
+            "roles": [],
+            "showDetails": "NEVER"
+          }
+        },
+        "management.endpoint.logfile-org.springframework.boot.actuate.autoconfigure.logging.LogFileWebEndpointProperties": {
+          "prefix": "management.endpoint.logfile",
+          "properties": {}
+        },
+        "management.endpoints.jmx-org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointProperties": {
+          "prefix": "management.endpoints.jmx",
+          "properties": {
+            "domain": "org.springframework.boot",
+            "exposure": {
+              "exclude": [],
+              "include": []
+            },
+            "staticNames": {}
+          }
+        },
+        "management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties": {
+          "prefix": "management.endpoints.web",
+          "properties": {
+            "basePath": "/actuator",
+            "exposure": {
+              "exclude": [],
+              "include": [
+                "*"
+              ]
+            },
+            "pathMapping": {}
+          }
+        },
+        "management.endpoints.web.cors-org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties": {
+          "prefix": "management.endpoints.web.cors",
+          "properties": {
+            "allowedHeaders": [],
+            "allowedMethods": [],
+            "allowedOrigins": [],
+            "exposedHeaders": [],
+            "maxAge": {
+              "units": [
+                "SECONDS",
+                "NANOS"
+              ]
+            }
+          }
+        },
+        "management.health.status-org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorProperties": {
+          "prefix": "management.health.status",
+          "properties": {
+            "httpMapping": {}
+          }
+        },
+        "management.info-org.springframework.boot.actuate.autoconfigure.info.InfoContributorProperties": {
+          "prefix": "management.info",
+          "properties": {
+            "git": {
+              "mode": "SIMPLE"
+            }
+          }
+        },
+        "management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties": {
+          "prefix": "management.metrics",
+          "properties": {
+            "distribution": {
+              "maximumExpectedValue": {},
+              "minimumExpectedValue": {},
+              "percentiles": {},
+              "percentilesHistogram": {},
+              "sla": {}
+            },
+            "enable": {},
+            "tags": {},
+            "useGlobalRegistry": true,
+            "web": {
+              "client": {
+                "maxUriTags": 100,
+                "requestsMetricName": "http.client.requests"
+              },
+              "server": {
+                "autoTimeRequests": true,
+                "maxUriTags": 100,
+                "requestsMetricName": "http.server.requests"
+              }
+            }
+          }
+        },
+        "management.metrics.export.simple-org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties": {
+          "prefix": "management.metrics.export.simple",
+          "properties": {
+            "mode": "CUMULATIVE",
+            "step": {
+              "units": [
+                "SECONDS",
+                "NANOS"
+              ]
+            }
+          }
+        },
+        "management.server-org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties": {
+          "prefix": "management.server",
+          "properties": {
+            "servlet": {
+              "contextPath": ""
+            }
+          }
+        },
+        "management.trace.http-org.springframework.boot.actuate.autoconfigure.trace.http.HttpTraceProperties": {
+          "prefix": "management.trace.http",
+          "properties": {
+            "include": [
+              "RESPONSE_HEADERS",
+              "COOKIE_HEADERS",
+              "REQUEST_HEADERS",
+              "TIME_TAKEN"
+            ]
+          }
+        },
+        "server-org.springframework.boot.autoconfigure.web.ServerProperties": {
+          "prefix": "server",
+          "properties": {
+            "error": {
+              "includeException": false,
+              "includeStacktrace": "NEVER",
+              "path": "/error",
+              "whitelabel": {
+                "enabled": true
+              }
+            },
+            "jetty": {
+              "acceptors": -1,
+              "accesslog": {
+                "append": false,
+                "dateFormat": "dd/MMM/yyyy:HH:mm:ss Z",
+                "enabled": false,
+                "extendedFormat": false,
+                "logCookies": false,
+                "logLatency": false,
+                "logServer": false,
+                "retentionPeriod": 31,
+                "timeZone": "GMT"
+              },
+              "maxHttpPostSize": {},
+              "selectors": -1
+            },
+            "maxHttpHeaderSize": {},
+            "servlet": {
+              "applicationDisplayName": "application",
+              "contextParameters": {}
+            },
+            "tomcat": {
+              "acceptCount": 100,
+              "accesslog": {
+                "buffered": true,
+                "directory": "logs",
+                "enabled": false,
+                "fileDateFormat": ".yyyy-MM-dd",
+                "pattern": "common",
+                "prefix": "access_log",
+                "renameOnRotate": false,
+                "requestAttributesEnabled": false,
+                "rotate": true,
+                "suffix": ".log"
+              },
+              "additionalTldSkipPatterns": [],
+              "backgroundProcessorDelay": {
+                "units": [
+                  "SECONDS",
+                  "NANOS"
+                ]
+              },
+              "internalProxies": "10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|192\\.168\\.\\d{1,3}\\.\\d{1,3}|169\\.254\\.\\d{1,3}\\.\\d{1,3}|127\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|172\\.1[6-9]{1}\\.\\d{1,3}\\.\\d{1,3}|172\\.2[0-9]{1}\\.\\d{1,3}\\.\\d{1,3}|172\\.3[0-1]{1}\\.\\d{1,3}\\.\\d{1,3}|0:0:0:0:0:0:0:1|::1",
+              "maxConnections": 10000,
+              "maxHttpHeaderSize": {},
+              "maxHttpPostSize": {},
+              "maxSwallowSize": {},
+              "maxThreads": 200,
+              "minSpareThreads": 10,
+              "portHeader": "X-Forwarded-Port",
+              "protocolHeaderHttpsValue": "https",
+              "redirectContextRoot": true,
+              "resource": {
+                "allowCaching": true
+              },
+              "uriEncoding": "UTF-8"
+            },
+            "undertow": {
+              "accesslog": {
+                "dir": "/home/rocks/Documents/Programming/Spring/bootcamp-java-spring-may-2019/Week3/VictorMartinez/Interceptors/aspects-actuator/logs",
+                "enabled": false,
+                "pattern": "common",
+                "prefix": "access_log.",
+                "rotate": true,
+                "suffix": "log"
+              },
+              "eagerFilterInit": true,
+              "maxHttpPostSize": {}
+            }
+          }
+        },
+        "spring.data.rest-org.springframework.boot.autoconfigure.data.rest.RepositoryRestProperties": {
+          "prefix": "spring.data.rest",
+          "properties": {
+            "detectionStrategy": "DEFAULT"
+          }
+        },
+        "spring.hateoas-org.springframework.boot.autoconfigure.hateoas.HateoasProperties": {
+          "prefix": "spring.hateoas",
+          "properties": {
+            "useHalAsDefaultJsonMediaType": true
+          }
+        },
+        "spring.http-org.springframework.boot.autoconfigure.http.HttpProperties": {
+          "prefix": "spring.http",
+          "properties": {
+            "encoding": {
+              "charset": "UTF-8",
+              "force": false,
+              "forceRequest": false,
+              "forceResponse": false
+            },
+            "logRequestDetails": false
+          }
+        },
+        "spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties": {
+          "prefix": "spring.info",
+          "properties": {
+            "build": {
+              "encoding": "UTF-8",
+              "location": {}
+            },
+            "git": {
+              "encoding": "UTF-8",
+              "location": {}
+            }
+          }
+        },
+        "spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties": {
+          "prefix": "spring.jackson",
+          "properties": {
+            "deserialization": {},
+            "generator": {},
+            "mapper": {},
+            "parser": {},
+            "serialization": {},
+            "visibility": {}
+          }
+        },
+        "spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties": {
+          "prefix": "spring.mvc",
+          "properties": {
+            "async": {},
+            "contentnegotiation": {
+              "favorParameter": false,
+              "favorPathExtension": false,
+              "mediaTypes": {}
+            },
+            "dispatchOptionsRequest": true,
+            "dispatchTraceRequest": false,
+            "ignoreDefaultModelOnRedirect": true,
+            "localeResolver": "ACCEPT_HEADER",
+            "logResolvedException": false,
+            "pathmatch": {
+              "useRegisteredSuffixPattern": false,
+              "useSuffixPattern": false
+            },
+            "servlet": {
+              "loadOnStartup": -1,
+              "path": "/"
+            },
+            "staticPathPattern": "/**",
+            "throwExceptionIfNoHandlerFound": false,
+            "view": {}
+          }
+        },
+        "spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties": {
+          "prefix": "spring.resources",
+          "properties": {
+            "addMappings": true,
+            "cache": {
+              "cachecontrol": {}
+            },
+            "chain": {
+              "cache": true,
+              "compressed": false,
+              "htmlApplicationCache": false,
+              "strategy": {
+                "content": {
+                  "enabled": false,
+                  "paths": [
+                    "/**"
+                  ]
+                },
+                "fixed": {
+                  "enabled": false,
+                  "paths": [
+                    "/**"
+                  ]
+                }
+              }
+            },
+            "staticLocations": [
+              "classpath:/META-INF/resources/",
+              "classpath:/resources/",
+              "classpath:/static/",
+              "classpath:/public/"
+            ]
+          }
+        },
+        "spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties": {
+          "prefix": "spring.servlet.multipart",
+          "properties": {
+            "enabled": true,
+            "fileSizeThreshold": {},
+            "maxFileSize": {},
+            "maxRequestSize": {},
+            "resolveLazily": false
+          }
+        },
+        "spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties": {
+          "prefix": "spring.task.execution",
+          "properties": {
+            "pool": {
+              "allowCoreThreadTimeout": true,
+              "coreSize": 8,
+              "keepAlive": {
+                "units": [
+                  "SECONDS",
+                  "NANOS"
+                ]
+              },
+              "maxSize": 2147483647,
+              "queueCapacity": 2147483647
+            },
+            "threadNamePrefix": "task-"
+          }
+        },
+        "spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties": {
+          "prefix": "spring.task.scheduling",
+          "properties": {
+            "pool": {
+              "size": 1
+            },
+            "threadNamePrefix": "scheduling-"
+          }
+        },
+        "spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties": {
+          "prefix": "spring.transaction",
+          "properties": {}
+        }
+      },
+      "parentId": null
+    }
+  }
+}
