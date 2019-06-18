@@ -12,6 +12,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
 import static org.mockito.Matchers.anyObject;
+import static org.mockito.ArgumentMatchers.any;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
@@ -40,8 +41,14 @@ public abstract class BaseClass {
 		Mockito.when(customerService.findCustomerById(1L))
 				.thenReturn(new Customer(1L, "Mike", "Castro"));
 		
-		Mockito.when(customerService.createCustomer(anyObject()))
+		Mockito.when(customerService.createCustomer(any(Customer.class)))
 				.thenReturn(new Customer(4L, "David", "Acuna"));
+		
+		Mockito.when(customerService.updateCustomer(Mockito.eq(2L), any(Customer.class)))
+				.thenReturn(new Customer(2L, "Update", "Customer"));
+		
+		Mockito.when(customerService.deleteCustomer(3L))
+		.thenReturn(new Customer(2L, "Update", "Customer"));
 		
 	}
 
