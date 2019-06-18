@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 Updated upstream
 hola modifico1 mundo
 desde modifico2 git
 hola otrasmodificaciones mundo
 de otrasmodificaciones sde git
+=======
+hola otrasmodificaciones mundo
+de otrasmodificaciones sde git
+>>>>>>> Stashed changes
