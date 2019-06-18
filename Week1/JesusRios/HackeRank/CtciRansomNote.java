@@ -9,24 +9,33 @@ import java.util.regex.*;
 public class CtciRansomNote {
 
     // Complete the checkMagazine function below.
-    static String checkMagazine(String[] magazine, String[] note) {
+    static void checkMagazine(String[] magazine, String[] note) {
         boolean found = false;
+        aqui:
         for (int i = 0; i < note.length; i++) {
+            found = false;
             for (int j = 0; j < magazine.length; j++) {
                 if (note[i].equals(magazine[j])) {
                     magazine[j] = "1";
+                    found = true;
+                    continue aqui;
                 } else {
-                    return "No";
+                    found = false;
                 }
             }
+            if (!found) {
+                System.out.println("No");
+                return;
+            }
+
         }
-        return "Yes";
+        System.out.println("Yes");
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String[] mn = scanner.nextLine().split(" ");
+/*        String[] mn = scanner.nextLine().split(" ");
 
         int m = Integer.parseInt(mn[0]);
 
@@ -52,8 +61,13 @@ public class CtciRansomNote {
             note[i] = noteItem;
         }
 
-        String result = checkMagazine(magazine, note);
+        checkMagazine(magazine, note);*/
 
-        scanner.close();
+        String[] magazine1 = {"give", "me", "one", "grand", "today", "night"};
+        String[] note1 = {"give", "one", "grand", "today"};
+        checkMagazine(magazine1, note1);
+
+
+        //scanner.close();
     }
 }
