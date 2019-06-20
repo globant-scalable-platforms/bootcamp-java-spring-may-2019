@@ -40,8 +40,7 @@ public class OfficeServiceTest {
     	.flatMap(elements->elements.stream())
     	.map(elemento->elemento.getName().toLowerCase()).sorted().forEach(System.out::println);
     	
-    
-    			assertEquals("cable\nfolder\nfood\nheadphones\niphone\nkeyboard\nlaptop\nmonitor\nmouse\npaper\npencil\npurse\n", outContent.toString());
+    assertEquals("cable\nfolder\nfood\nheadphones\niphone\nkeyboard\nlaptop\nmonitor\nmouse\npaper\npencil\npurse\n", outContent.toString());
     			
     }
 }
