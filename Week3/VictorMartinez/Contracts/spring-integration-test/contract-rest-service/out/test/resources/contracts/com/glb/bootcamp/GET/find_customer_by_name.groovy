@@ -1,7 +1,5 @@
 package com.glb.bootcamp.GET
 
-import org.springframework.cloud.contract.spec.Contract
-
 Contract.make {
     description "should return customer by name = Mauro"
 

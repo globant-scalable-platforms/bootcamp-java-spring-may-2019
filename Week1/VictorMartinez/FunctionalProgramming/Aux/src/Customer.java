@@ -1,7 +1,6 @@
-package com.glb.bootcamp.model;
 
 public class Customer {
-
+	
 	private Long id;
 	private String name;
 	private String surname;
@@ -11,9 +10,8 @@ public class Customer {
 	public Customer(
 			 Long id,
 			 String name,
-			 String surname
-	)
-	{	super();
+			 String surname) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.surname = surname;
@@ -42,4 +40,5 @@ public class Customer {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
+	
 }

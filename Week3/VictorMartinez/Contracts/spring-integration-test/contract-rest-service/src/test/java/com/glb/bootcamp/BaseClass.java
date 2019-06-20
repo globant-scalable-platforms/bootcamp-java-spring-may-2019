@@ -13,6 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
+import static org.mockito.ArgumentMatchers.any;
+
 /**
  * To verify an API provider (the Spring controller in our case), Spring Cloud Contract automatically generates JUnit
  * tests from a given contract. In order to give these automatically generated tests a working context, we need to
@@ -40,6 +42,13 @@ public abstract class BaseClass {
 
         Mockito.when(customerService.findCustomerByName("Mike"))
                 .thenReturn(new Customer(1L, "Mike", "Castro"));
+
+        Mockito.when(customerService.addNewCustomer(any(Customer.class)))
+				.thenReturn((new Customer(4L, "Felipe", "Martinez")));
+
+		Mockito.when(customerService.updateCustomer(any(Long.TYPE), any(Customer.class)))
+				.thenReturn((new Customer(1L, "Mike", "Gutierrez")));
+
 	}
 
 }

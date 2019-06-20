@@ -1,17 +1,11 @@
-package com.glb.bootcamp.service;
-
-import com.glb.bootcamp.model.Customer;
-import org.springframework.stereotype.Service;
-
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
-public class CustomerService {
-
-	private final Map<Long, Customer> customers;
+public class customers {
 	
-	public CustomerService() {
+private final Map<Long, Customer> customers;
+	
+	public customers() {
 		customers = new HashMap<>();
 		customers.put(1L, new Customer(1L, "Mike", "Castro"));
 		customers.put(2L, new Customer(2L, "Mauro", "Perez"));
@@ -20,6 +14,12 @@ public class CustomerService {
 	
 	public Customer findCustomerById(Long id) {
 		return customers.get(id);
+	}
+	
+	public void printCustomer() {
+		for(Customer custom : this.customers.values()) {
+			System.out.println(custom.getName());
+		}
 	}
 
 	public Customer findCustomerByName(String name) {
@@ -35,16 +35,15 @@ public class CustomerService {
 		return this.customers;
 	}
 
-	public Customer addNewCustomer(Customer customer){
+	public Customer addNewCustomer(Customer customer){ 
+		HashMap<Long,Customer> tempCustom = new HashMap<Long, Customer>(this.customers);
+		tempCustom.put(customer.getId(), customer);
+		this.customers = new HashMap<Long, Customer>(tempCustom);
+		this.customers.put(customer.getId(), customer); return this.customers.get(customer.getId());
 
-		 //customers.put(customer.getId(), new Customer(customer.getId(), customer.getName(), customer.getSurname()));
-		customers.put(customer.getId(),customer);
-		return customers.get(customer.getId());
-
+	public 
 	}
+	
+	
 
-	public Customer updateCustomer(Long userId, Customer customer){
-		customers.put(userId, customer);
-		return customers.get(userId);
-	}
 }
