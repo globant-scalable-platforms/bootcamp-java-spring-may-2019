@@ -4,6 +4,7 @@ import com.glb.bootcamp.model.Customer;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -69,6 +70,26 @@ public class CustomerEndpoint {
                 this.restTemplate.getForObject("http://localhost:8000/customer/id/"+userId, Customer.class);
 
         return ("Welcome old but Updated User " + newCustomer.getId()+ " "+newCustomer.getName() +" "+ newCustomer.getSurname());
+
+
+    }
+
+
+    @RequestMapping(value="/customer/id/{userId}",
+            method = RequestMethod.DELETE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public String deleteCustomer(@PathVariable("userId") Long userId, @RequestBody Customer deleteCustomer) throws InterruptedException {
+
+        // Create Query with new User.
+        HttpHeaders headers = new HttpHeaders();
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+        HttpEntity<Customer> entity = new HttpEntity<Customer>(deleteCustomer,headers);
+
+        this.restTemplate.exchange("http://localhost:8000/customer/id/"+userId, HttpMethod.DELETE, entity, Customer.class);
+
+        Customer newCustomer =  this.restTemplate.getForObject("http://localhost:8000/customer/id/"+userId, Customer.class);
+
+        return ("Welcome deleted User " + newCustomer.getName() + " " + newCustomer.getSurname() );
 
 
     }

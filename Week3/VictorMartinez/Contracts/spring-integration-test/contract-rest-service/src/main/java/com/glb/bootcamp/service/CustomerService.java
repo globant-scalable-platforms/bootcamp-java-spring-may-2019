@@ -19,7 +19,8 @@ public class CustomerService {
 	}
 	
 	public Customer findCustomerById(Long id) {
-		return customers.get(id);
+
+		return (customers.containsKey(id))? customers.get(id): new Customer(0L, "-","-");
 	}
 
 	public Customer findCustomerByName(String name) {
@@ -46,5 +47,14 @@ public class CustomerService {
 	public Customer updateCustomer(Long userId, Customer customer){
 		customers.put(userId, customer);
 		return customers.get(userId);
+	}
+
+	public Customer deletedCustomer(Long userId){
+		try {
+			this.customers.remove(userId);
+		}catch (Exception ex){
+			return new Customer (0L,"-","-");
+		}
+		return (!customers.containsKey(userId))? new Customer(0L, "-","-"): customers.get(userId);
 	}
 }

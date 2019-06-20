@@ -1,5 +1,6 @@
 package com.glb.bootcamp.GET;
 
+
 import com.glb.bootcamp.model.Customer;
 import org.assertj.core.api.BDDAssertions;
 import org.junit.Test;
@@ -15,24 +16,25 @@ import org.springframework.web.client.RestTemplate;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL, ids = {"com.globant.bootcamp:contract-rest-service:+:stubs"})
-public class ContractRestClientApplicationTest {
+public class ContractRestClientGetdeletedUserTest {
 
-	@StubRunnerPort("contract-rest-service")
-	private int port;
+    @StubRunnerPort("contract-rest-service")
+    private int port;
 
-	@Test
-	public void get_customer_from_service_contract() {
-		// given:
-		RestTemplate restTemplate = new RestTemplate();
-		
-		// when:
-		ResponseEntity<Customer> entity = restTemplate.getForEntity("http://localhost:"+port+"/customer/id/1", Customer.class);
 
-		// then:
-		BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
-		BDDAssertions.then(entity.getBody().getId()).isEqualTo(1l);
-		BDDAssertions.then(entity.getBody().getName()).isEqualTo("Mike");
-		BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Castro");
-		
-	}
+    @Test
+    public void get_customer_from_service_contract() {
+        // given:
+        RestTemplate restTemplate = new RestTemplate();
+
+        // when:
+        ResponseEntity<Customer> entity = restTemplate.getForEntity("http://localhost:"+port+"/customer/id/2", Customer.class);
+
+        // then:
+        BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
+        BDDAssertions.then(entity.getBody().getId()).isEqualTo(0l);
+        BDDAssertions.then(entity.getBody().getName()).isEqualTo("-");
+        BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("-");
+
+    }
 }

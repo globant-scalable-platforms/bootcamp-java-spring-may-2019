@@ -62,4 +62,16 @@ public class CustomerEndpoint {
 
 	}
 
+	@DeleteMapping(value = "/customer/id/{userId}",
+			consumes = MediaType.APPLICATION_JSON_VALUE,
+			produces = MediaType.APPLICATION_JSON_VALUE)
+	public Customer deleteCustomer(@PathVariable("userId") Long userId, @RequestBody Customer customer){
+
+		 return (this.customerService.deletedCustomer(userId));
+
+	}
+
+
+
+
 }

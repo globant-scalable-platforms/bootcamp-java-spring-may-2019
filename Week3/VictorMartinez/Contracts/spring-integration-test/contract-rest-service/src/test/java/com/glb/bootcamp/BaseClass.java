@@ -3,6 +3,7 @@ package com.glb.bootcamp;
 import com.glb.bootcamp.endpoint.CustomerEndpoint;
 import com.glb.bootcamp.model.Customer;
 import com.glb.bootcamp.service.CustomerService;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -10,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
 import static org.mockito.ArgumentMatchers.any;
 
@@ -51,6 +50,14 @@ public abstract class BaseClass {
 
         Mockito.when(customerService.findCustomerById(3L))
                 .thenReturn(new Customer(3L, "Daniel", "Gutierrez"));
+
+        Mockito.when(customerService.deletedCustomer(2L))
+				.thenReturn(new Customer(0L, "-","-"));
+
+		Mockito.when(customerService.findCustomerById(2L))
+				.thenReturn(new Customer(0L, "-", "-"));
+
+
 
 	}
 
