@@ -3,14 +3,14 @@ package com.glb.bootcamp.PUT
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-    description "should update a customer by id = 1"
+    description "should update a customer by id = 3"
 
     request {
         method PUT()
-        url "/customer/id/1"
+        url "/customer/id/3"
         body(
-                id:1,
-                name:"Mike",
+                id:3,
+                name:"Daniel",
                 surname:"Gutierrez"
         )
         headers {
@@ -22,8 +22,8 @@ Contract.make {
     response {
         status OK()
         body(
-                id:1,
-                name:"Mike",
+                id:3,
+                name:"Daniel",
                 surname:"Gutierrez"
         )
         headers {

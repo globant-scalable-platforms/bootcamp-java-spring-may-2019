@@ -1,5 +1,8 @@
 package com.glb.bootcamp.POST
 
+import org.springframework.cloud.contract.spec.Contract
+
+
 Contract.make {
 
     description "should add a customer by id = 4"

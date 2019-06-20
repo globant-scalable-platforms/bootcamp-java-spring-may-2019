@@ -65,14 +65,9 @@ public class CustomerEndpoint {
         HttpEntity<Customer> entity = new HttpEntity<Customer>(oldCustomer,headers);
 
         this.restTemplate.put("http://localhost:8000/customer/id/"+userId,entity);
-
-
-
         Customer newCustomer =
                 this.restTemplate.getForObject("http://localhost:8000/customer/id/"+userId, Customer.class);
-        System.out.println("HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEY");
-        System.out.println(newCustomer.getSurname());
-        System.out.println("HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEY");
+
         return ("Welcome old but Updated User " + newCustomer.getId()+ " "+newCustomer.getName() +" "+ newCustomer.getSurname());
 
 

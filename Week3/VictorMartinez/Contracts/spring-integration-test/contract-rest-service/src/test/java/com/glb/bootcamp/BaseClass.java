@@ -47,7 +47,10 @@ public abstract class BaseClass {
 				.thenReturn((new Customer(4L, "Felipe", "Martinez")));
 
 		Mockito.when(customerService.updateCustomer(any(Long.TYPE), any(Customer.class)))
-				.thenReturn((new Customer(1L, "Mike", "Gutierrez")));
+				.thenReturn((new Customer(3L, "Daniel", "Gutierrez")));
+
+        Mockito.when(customerService.findCustomerById(3L))
+                .thenReturn(new Customer(3L, "Daniel", "Gutierrez"));
 
 	}
 

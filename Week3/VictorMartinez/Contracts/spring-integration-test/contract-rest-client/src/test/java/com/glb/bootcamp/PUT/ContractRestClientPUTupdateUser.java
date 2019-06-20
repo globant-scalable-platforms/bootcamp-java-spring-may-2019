@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT)
-@AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL, ids = {"com.globant.bootcamp:contract-rest-service:+:stubs:8100"})
+@AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL, ids = {"com.globant.bootcamp:contract-rest-service:+:stubs"})
 
 public class ContractRestClientPUTupdateUser {
 
@@ -31,15 +31,13 @@ public class ContractRestClientPUTupdateUser {
 
 
         JSONObject customerJsonObject = new JSONObject();
-        customerJsonObject.put("id", 1L);
-        customerJsonObject.put("name", "Mike");
+        customerJsonObject.put("id", 3L);
+        customerJsonObject.put("name", "Daniel");
         customerJsonObject.put("surname", "Gutierrez");
 
         //Customer updateCustomer = new Customer(1L, "Mike", "Gutierrez");
 
         RestTemplate putUpdateUserRequest = new RestTemplate();
-        RestTemplate getCheckUserRequest = new RestTemplate();
-
 
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
@@ -47,16 +45,13 @@ public class ContractRestClientPUTupdateUser {
         HttpEntity<String> Query = new HttpEntity<String>(customerJsonObject.toString(),headers);
 
 
-        putUpdateUserRequest.exchange("http://localhost:"+port+"/customer/id/1", HttpMethod.PUT, Query, String.class);
-
-
-
-        ResponseEntity<Customer> entity = putUpdateUserRequest.getForEntity("http://localhost:"+port+"/customer/id/1", Customer.class);
+        putUpdateUserRequest.exchange("http://localhost:"+port+"/customer/id/3", HttpMethod.PUT, Query, String.class);
+        ResponseEntity<Customer> entity = putUpdateUserRequest.getForEntity("http://localhost:"+port+"/customer/id/3", Customer.class);
 
         // then:
         BDDAssertions.then(entity.getStatusCodeValue()).isEqualTo(200);
-        BDDAssertions.then(entity.getBody().getId()).isEqualTo(1l);
-        BDDAssertions.then(entity.getBody().getName()).isEqualTo("Mike");
+        BDDAssertions.then(entity.getBody().getId()).isEqualTo(3l);
+        BDDAssertions.then(entity.getBody().getName()).isEqualTo("Daniel");
         BDDAssertions.then(entity.getBody().getSurname()).isEqualTo("Gutierrez");
 
     }
