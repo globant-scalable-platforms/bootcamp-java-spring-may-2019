@@ -1,0 +1,64 @@
+{
+   "contexts":{
+      "application":{
+         "beans":{
+            "loggerRound":{
+               "aliases":[
+
+               ],
+               "scope":"singleton",
+               "type":"com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerRound",
+               "resource":"file [/home/francisco-torres/git/bootcamp-deliveries/Week3/francisco-torres/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerRound.class]",
+               "dependencies":[
+
+               ]
+            },
+            "loggerPublic":{
+               "aliases":[
+
+               ],
+               "scope":"singleton",
+               "type":"com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerPublic",
+               "resource":"file [/home/francisco-torres/git/bootcamp-deliveries/Week3/francisco-torres/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerPublic.class]",
+               "dependencies":[
+
+               ]
+            },
+            "logger":{
+               "aliases":[
+
+               ],
+               "scope":"singleton",
+               "type":"com.bootcamp.aopactuator.aspectsactuator.aspect.Logger",
+               "resource":"file [/home/francisco-torres/git/bootcamp-deliveries/Week3/francisco-torres/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/Logger.class]",
+               "dependencies":[
+
+               ]
+            },
+            "loggerPointCut":{
+               "aliases":[
+
+               ],
+               "scope":"singleton",
+               "type":"com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerPointCut",
+               "resource":"file [/home/francisco-torres/git/bootcamp-deliveries/Week3/francisco-torres/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerPointCut.class]",
+               "dependencies":[
+
+               ]
+            },
+            "loggerCount":{
+               "aliases":[
+
+               ],
+               "scope":"singleton",
+               "type":"com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerCount",
+               "resource":"file [/home/francisco-torres/git/bootcamp-deliveries/Week3/francisco-torres/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerCount.class]",
+               "dependencies":[
+
+               ]
+            }
+         },
+         "parentId":null
+      }
+   }
+}

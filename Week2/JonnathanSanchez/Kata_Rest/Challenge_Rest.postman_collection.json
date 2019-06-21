@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "9da07806-7e1b-4327-8164-0b50ff01d983",
+		"name": "Challenge_Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/controller/validateDates?fromdate=2019-11-02&todate=2019-11-04",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "roles",
+						"value": "ad",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/controller/validateDates?fromdate=2019-11-02&todate=2019-11-04",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controller",
+						"validateDates"
+					],
+					"query": [
+						{
+							"key": "fromdate",
+							"value": "2019-11-02"
+						},
+						{
+							"key": "todate",
+							"value": "2019-11-04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/controller/validateRoles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "roles",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/controller/validateRoles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controller",
+						"validateRoles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/controller/calculateFile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": null,
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/controller/calculateFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controller",
+						"calculateFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/controller/listStudents?name=Jonnathan&identification=123&age=25",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/controller/listStudents?name=Jonnathan&identification=123&age=25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controller",
+						"listStudents"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Jonnathan"
+						},
+						{
+							"key": "identification",
+							"value": "123"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
