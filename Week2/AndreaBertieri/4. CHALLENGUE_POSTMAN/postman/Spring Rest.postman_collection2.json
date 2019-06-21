@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "d61242ec-1656-4135-b2eb-c923a75e1fd3",
+		"name": "Spring Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{urlLocal}}/",
+					"host": [
+						"{{urlLocal}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P888\",\n        \"name\": \"Producto 888\"\n}"
+				},
+				"url": {
+					"raw": "{{urlLocal}}",
+					"host": [
+						"{{urlLocal}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{urlLocal}}/P111",
+					"host": [
+						"{{urlLocal}}"
+					],
+					"path": [
+						"P111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{urlLocal}}/filter?name=Product 1",
+					"host": [
+						"{{urlLocal}}"
+					],
+					"path": [
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Product 1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P835\",\n        \"name\": \"Producto 835\"\n}"
+				},
+				"url": {
+					"raw": "{{urlLocal}}/P835",
+					"host": [
+						"{{urlLocal}}"
+					],
+					"path": [
+						"P835"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{urlLocal}}/111",
+					"host": [
+						"{{urlLocal}}"
+					],
+					"path": [
+						"111"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

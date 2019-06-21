@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "5ca140ec-98d0-4525-b5ac-138592cf5db0",
+		"name": "Spring Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9add22d8-4c44-48b9-a5fd-4744845a190c",
+						"exec": [
+							"pm.test(\"status is 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "07931836-d2ab-4a0c-9492-c8bccf99d6de",
+						"exec": [
+							"pm.test(\"200 ok or 201 of created\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201]);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P835\",\n        \"name\": \"Product 5\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e3d990ec-f277-409f-9d2a-259b99c04ef1",
+						"exec": [
+							"pm.test(\"With body and valid JSON\", function () {\r",
+							"    pm.response.to.be.withBody;\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check Name\", () => {\r",
+							"    const product = pm.response.json()\r",
+							"    pm.expect(product.name).to.eql('Product 1')\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/P435",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P435"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "16f0ce99-fc9d-4043-8d55-e688cb5b49e0",
+						"exec": [
+							"pm.test(\"Check Id and Name\", () => {\r",
+							"    const product = pm.response.json()\r",
+							"    pm.expect(product[0].name).to.eql('Product 1')\r",
+							"    pm.expect(product[0].id).to.eql('P435')\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/filter?name=Product 1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Product 1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "81cb4c22-199a-4dee-86fe-62172b5c150c",
+						"exec": [
+							"pm.test(\"status is 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"P552\",\n        \"name\": \"Product 2 Update\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/products/P552",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P552"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "812d4630-cb72-4339-a5cd-dbf70178820f",
+						"exec": [
+							"pm.test(\"status is 200 OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/P435",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P435"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Environment1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e3d990ec-f277-409f-9d2a-259b99c04ef1",
+						"exec": [
+							"pm.test(\"environment to be Boot_One\", function () { \r",
+							"    pm.expect(pm.environment.get(\"env\")).to.equal(\"Boot_One\"); \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/{{endpoint}}/{{id}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"{{endpoint}}",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Environment2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e3d990ec-f277-409f-9d2a-259b99c04ef1",
+						"exec": [
+							"pm.test(\"environment to be Boot_Two\", function () { \r",
+							"    pm.expect(pm.environment.get(\"env\")).to.equal(\"Boot_Two\"); \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/{{endpoint}}/{{id}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"{{endpoint}}",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

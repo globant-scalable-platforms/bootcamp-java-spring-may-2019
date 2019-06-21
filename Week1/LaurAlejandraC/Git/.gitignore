@@ -1,0 +1,7 @@
+# Omit any class file
+*.class
+
+.DS_Store
+
+# Omit idea project configuration folder
+.idea/

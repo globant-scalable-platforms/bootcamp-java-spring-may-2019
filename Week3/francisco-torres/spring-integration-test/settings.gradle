@@ -1,0 +1,4 @@
+rootProject.name = 'spring-integration-test'
+
+include 'contract-rest-service'
+include 'contract-rest-client'

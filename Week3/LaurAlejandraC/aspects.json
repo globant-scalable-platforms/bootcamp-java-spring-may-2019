@@ -1,0 +1,43 @@
+{
+    "contexts":{
+        "application":{
+            "beans":{
+                        "loggerRound": {
+                            "aliases": [],
+                            "scope": "singleton",
+                            "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerRound",
+                            "resource": "file [/Users/Laura/Documents/Personal/bootcamp-java-spring-may-2019/Week3/LaurAlejandraC/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerRound.class]",
+                            "dependencies": []
+                        },
+                        "logger": {
+                            "aliases": [],
+                            "scope": "singleton",
+                            "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.Logger",
+                            "resource": "file [/Users/Laura/Documents/Personal/bootcamp-java-spring-may-2019/Week3/LaurAlejandraC/aspects-actuator/out/production/classes/com/bootcamp/aopactuator/aspectsactuator/aspect/Logger.class]",
+                            "dependencies": []
+                        },
+                        "methodLogger": {
+                            "aliases": [],
+                            "scope": "singleton",
+                            "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.MethodLogger",
+                            "resource": "file [/Users/Laura/Documents/Personal/bootcamp-java-spring-may-2019/Week3/LaurAlejandraC/aspects-actuator/build/classes/java/main/com/bootcamp/aopactuator/aspectsactuator/aspect/MethodLogger.class]",
+                            "dependencies": []
+                        },
+                        "timer": {
+                            "aliases": [],
+                            "scope": "singleton",
+                            "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.Timer",
+                            "resource": "file [/Users/Laura/Documents/Personal/bootcamp-java-spring-may-2019/Week3/LaurAlejandraC/aspects-actuator/build/classes/java/main/com/bootcamp/aopactuator/aspectsactuator/aspect/Timer.class]",
+                            "dependencies": []
+                        },
+                        "userLogger": {
+                            "aliases": [],
+                            "scope": "singleton",
+                            "type": "com.bootcamp.aopactuator.aspectsactuator.user.UserLogger",
+                            "resource": "file [/Users/Laura/Documents/Personal/bootcamp-java-spring-may-2019/Week3/LaurAlejandraC/aspects-actuator/build/classes/java/main/com/bootcamp/aopactuator/aspectsactuator/user/UserLogger.class]",
+                            "dependencies": []
+                        }
+                    }
+                }
+            }
+}

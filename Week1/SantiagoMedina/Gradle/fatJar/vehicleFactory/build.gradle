@@ -1,0 +1,14 @@
+plugins { 
+    id 'application' 
+}
+
+mainClassName = 'vehiclefactory.VehicleFactory'
+
+dependencies {
+    compile project(':wheel-factory')
+    compile project(':body-factory') 
+}
+
+run{
+    standardInput = System.in
+}

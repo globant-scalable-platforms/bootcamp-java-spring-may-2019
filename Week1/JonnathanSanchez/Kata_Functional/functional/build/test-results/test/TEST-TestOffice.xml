@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestOffice" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-03T12:00:41" hostname="jonnathan-PC" time="0.014">
+  <properties/>
+  <testcase name="retrieveElements" classname="TestOffice" time="0.014"/>
+  <system-out><![CDATA[armario
+armario
+armario
+armario
+armario
+carro
+carro
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
