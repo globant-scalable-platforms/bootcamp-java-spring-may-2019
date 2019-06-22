@@ -32,6 +32,6 @@ public class CustomerService {
 
 	public Customer saveCustomer(Customer newCustomer) {
 		customers.put(4L, newCustomer);
-		return customers.get(4L);
+		return newCustomer;
 	}
 }

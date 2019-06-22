@@ -3,6 +3,11 @@
  */
 package contract.rest.service.kata1.endpoint;
 
+import javax.validation.Valid;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,9 +35,17 @@ public class CustomerEndpoint {
 		return customerService.findCustomerById(id);
 	}
 	
-	@PostMapping("/createCustomer")
-	public Customer createCustomer(@RequestBody Customer newCustomer) {
-		return customerService.saveCustomer(newCustomer);
+	@PostMapping(value="/createCustomer", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<Customer> createCustomer(@RequestBody @Valid Customer newCustomer) {
+		try {
+//			return customerService.saveCustomer(newCustomer);
+			return ResponseEntity
+				      .status(HttpStatus.CREATED)
+				      .body(customerService.saveCustomer(newCustomer));
+		} catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+		}
+		
 	}
 
 }

@@ -8,25 +8,17 @@ Contract.make {
 	request {
 		url "/createCustomer"
 		method POST()
+		headers {
+	      contentType applicationJson()
+	    }
 		body(
 			id: 4,
 			name: "Bryan",
 			surname: "Guerrero"
 		)
-		headers {
-	      contentType(applicationJson())
-	    }
 	}
 
 	response {
-		status OK()
-		headers {
-	      contentType(applicationJson())
-	    }
-		body(
-			id: 4,
-			name: "Bryan",
-			surname: "Guerrero"
-		)
+		status CREATED()
 	}
 }
