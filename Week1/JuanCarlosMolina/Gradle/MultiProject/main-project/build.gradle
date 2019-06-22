@@ -16,4 +16,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/org.sonarsource.sonarqube/sonar-plugin-api
+	compile group: 'org.sonarsource.sonarqube', name: 'sonar-plugin-api', version: '7.7'
+	compile project(':sub-project')
 }
