@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "8e180149-a414-49b4-9afc-abd9352cf7d9",
+		"name": "Postman Challenge",
+		"description": "Juan Carlos MOlina",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "723feeec-f19f-4653-9ef8-84579a88cfc7",
+						"exec": [
+							"pm.test(\"response must be valid and have a body\", function () {\r",
+							"    \r",
+							"     \r",
+							"     pm.response.to.be.ok; // success if status code is 200\r",
+							"     \r",
+							"     pm.response.to.be.withBody; // response contains a body\r",
+							"     \r",
+							"     pm.response.to.be.json; // body has json format\r",
+							"     \r",
+							"     var jsonData = pm.response.json();\r",
+							"     \r",
+							"     pm.expect(jsonData.results)[0].id.to.eql(\"P435\"); //Is first product id equal to P435\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				},
+				"description": "Retrieves product list"
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"P1280\",\"name\":\"Product 1280\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/products/P1280",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P1280"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter by Product Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/filter?name=Product 2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Product 2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"P1280\",\"name\":\"Product 280\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/P1280",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P1280"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/P1280",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"P1280"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
