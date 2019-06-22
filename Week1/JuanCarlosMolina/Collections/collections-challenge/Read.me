@@ -1,0 +1,32 @@
+Results:
+
+Test	Unit	Test 1	Test 2	Test 3	Test 4	Test 5	Test 6	Test 7	Test 8	Test 9	Test 10	Average
+ArrayList adding	ms	54	64	54	59	88	63	54	54	64	57	61,1
+LinkedList adding	ms	39	50	33	38	40	43	42	40	53	34	41,2
+ArrayList remove	탎	51	72	51	52	63	61	67	43	86	47	59,3
+LinkedList remove	탎	463	716	467	483	550	510	539	457	727	523	543,5
+Adding to the middle in ArrayList	탎	71	64	59	39	47	62	62	39	71	46	56
+Adding to the middle in LinkedList	탎	510	595	483	463	567	532	465	428	653	401	509,7
+ArrayList iteration	ms	3	4	3	3	4	4	3	3	4	3	3,4
+LinkedList iteration	ms	3590	3581	3590	3532	3541	3488	3557	3516	3563	3541	3549,9
+ArrayList sorting	ms	47	43	38	33	33	33	55	35	37	36	39
+LinkedList sorting	ms	27	25	28	24	25	26	25	25	27	26	25,8
+HashMap adding	ms	380	386	425	607	381	613	675	376	620	398	486,1
+TreeMap adding	ms	763	755	862	748	718	722	742	726	702	753	749,1
+Find element by key in HashMap	ms	20	10	10	18	12	10	13	10	10	10	12,3
+Find element by key in TreeMap	ms	12	10	10	10	11	10	11	10	10	10	10,4
+Remove element by key in HashMap	ms	10	8	9	9	9	9	9	9	9	9	9
+Remove element by key in TreeMap	ms	11	7	5	7	5	7	23	8	8	9	9
+Iteration over HashMap	ms	17	17	19	18	20	17	17	17	18	18	17,8
+Iteration over TreeMap	ms	42	49	49	364	54	357	352	43	358	45	171,3
+
+Conclutions:
+
+Adding elements sequentially is faster in LinkedList that in ArrayList.
+Adding and removing elements from the middle is faster in ArrayList that in LinkedList.
+Iteration is quite more faster in ArrayList that in LinkedList.
+Sorting is faster in LinkedList that in ArrayList.
+Adding elements sequentially is faster in HashMap that in TreeMap.
+Finding elements is similar in both implementations, but sometimes takes double time un HashMap.
+Removing elements is quite similar in both implementations.
+Iteration is quite more faster in HashMap that in TreeMap.

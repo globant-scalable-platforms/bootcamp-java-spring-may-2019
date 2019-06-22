@@ -1,0 +1,13 @@
+This file contains sample text to test GIT features.
+
+Procedure:
+
+1. Initialize GIT repo.
+2. Create a new file.
+3. Add new file to GIT
+4. Commit Changes.
+5. Create a new Branch named bootcamp.
+6. Text modified from Master and bootcamp
+7. Back to master.
+8. Merge bootcamp branch.
+9. Test
