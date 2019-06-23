@@ -1,0 +1,30 @@
+{
+  "contexts": {
+    "application": {
+      "beans": {
+		  "loggerTimer": {
+			  "aliases": [],
+			  "scope": "singleton",
+			  "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerTimer",
+			  "resource": "file [D:\\BOOTCAMP GLOBANT\\Repo\\bootcamp-java-spring-may-2019\\Week3\\JonnathanSanchez\\Kata_Interceptors\\aspects-actuator\\build\\classes\\java\\main\\com\\bootcamp\\aopactuator\\aspectsactuator\\aspect\\LoggerTimer.class]",
+			  "dependencies": []
+			},
+			"challengeController": {
+			  "aliases": [],
+			  "scope": "singleton",
+			  "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.ChallengeController",
+			  "resource": "file [D:\\BOOTCAMP GLOBANT\\Repo\\bootcamp-java-spring-may-2019\\Week3\\JonnathanSanchez\\Kata_Interceptors\\aspects-actuator\\build\\classes\\java\\main\\com\\bootcamp\\aopactuator\\aspectsactuator\\aspect\\ChallengeController.class]",
+			  "dependencies": [
+				"batchFacade"
+			  ]
+			},
+			"loggerController": {
+			  "aliases": [],
+			  "scope": "singleton",
+			  "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerController",
+			  "resource": "file [D:\\BOOTCAMP GLOBANT\\Repo\\bootcamp-java-spring-may-2019\\Week3\\JonnathanSanchez\\Kata_Interceptors\\aspects-actuator\\build\\classes\\java\\main\\com\\bootcamp\\aopactuator\\aspectsactuator\\aspect\\LoggerController.class]",
+			  "dependencies": []
+			}
+		}
+	}
+}
