@@ -1,0 +1,44 @@
+{
+    "contexts": {
+        "application": {
+            "beans": {
+                "loggerRound": {
+                    "aliases": [],
+                    "scope": "singleton",
+                    "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerRound",
+                    "resource": "file [/Users/santiago/Documents/bootcampGlobant/bootcamp-java-spring-may-2019/Week3/SantiagoMedina/aspects-actuator/bin/main/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerRound.class]",
+                    "dependencies": []
+                },
+                "loggerAll": {
+                    "aliases": [],
+                    "scope": "singleton",
+                    "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerAll",
+                    "resource": "file [/Users/santiago/Documents/bootcampGlobant/bootcamp-java-spring-may-2019/Week3/SantiagoMedina/aspects-actuator/bin/main/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerAll.class]",
+                    "dependencies": []
+                },
+                "logger3": {
+                    "aliases": [],
+                    "scope": "singleton",
+                    "type": "com.bootcamp.aopactuator.aspectsactuator.aspect2.Logger3",
+                    "resource": "file [/Users/santiago/Documents/bootcampGlobant/bootcamp-java-spring-may-2019/Week3/SantiagoMedina/aspects-actuator/bin/main/com/bootcamp/aopactuator/aspectsactuator/aspect2/Logger3.class]",
+                    "dependencies": []
+                },
+                "logger": {
+                    "aliases": [],
+                    "scope": "singleton",
+                    "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.Logger",
+                    "resource": "file [/Users/santiago/Documents/bootcampGlobant/bootcamp-java-spring-may-2019/Week3/SantiagoMedina/aspects-actuator/bin/main/com/bootcamp/aopactuator/aspectsactuator/aspect/Logger.class]",
+                    "dependencies": []
+                },
+                "loggerPointCut": {
+                    "aliases": [],
+                    "scope": "singleton",
+                    "type": "com.bootcamp.aopactuator.aspectsactuator.aspect.LoggerPointCut",
+                    "resource": "file [/Users/santiago/Documents/bootcampGlobant/bootcamp-java-spring-may-2019/Week3/SantiagoMedina/aspects-actuator/bin/main/com/bootcamp/aopactuator/aspectsactuator/aspect/LoggerPointCut.class]",
+                    "dependencies": []
+                }
+            },
+            "parentId": null
+        }
+    }
+}
