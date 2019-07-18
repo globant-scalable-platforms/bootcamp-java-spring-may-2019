@@ -7,6 +7,4 @@
  * in the user manual at https://docs.gradle.org/5.4.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'Kata1'
-include 'contract-rest-client-kata1'
-include 'contract-rest-service-kata1'
+rootProject.name = 'KatasInterceptors'
