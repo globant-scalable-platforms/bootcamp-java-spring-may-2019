@@ -1,0 +1,54 @@
+package com.globant.bootcamp.spring.springcore.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.globant.bootcamp.spring.springcore.domain.Score;
+
+
+@RestController
+public class StageTwoController {
+    
+	@Autowired
+    @Qualifier(value="scoreSingleton")
+    private Score scoreTotal;
+    
+    @Autowired
+    @Qualifier(value="scorePrototype")
+    private Score scorePlayerOne;
+    
+    @Autowired
+    @Qualifier(value="scorePrototype")
+    private Score scorePlayerTwo;
+    
+    @RequestMapping(value="/stage-one")
+    public String getScopes() {
+    	final List<Score> result = new ArrayList<>();
+        
+        	scoreTotal.setCount(scoreTotal.getCount()+1);
+        	scorePlayerTwo.setCount(scorePlayerOne.getCount() + randomNumberInRange(0.000, 5.000));
+        
+        if(scoreTotal.getCount() == 6) {
+        	if(scorePlayerOne.getCount() > scorePlayerTwo.getCount()) {
+        		return "El jugador 1 es el ganador con un puntaje de: "+ scorePlayerOne.getCount();
+        	} else if(scorePlayerTwo.getCount() > scorePlayerOne.getCount()) {
+        		return "El jugador 2 es el ganador con un puntaje de: "+ scorePlayerTwo.getCount();
+        	} else {
+        		return "El jugador 1 y 2 empataron con un puntaje de: "+ scorePlayerTwo.getCount();
+        	}
+        }
+        
+        return null;
+    }
+    
+    public static double randomNumberInRange(double min, double max) {
+    	Random r = new Random();
+        return min + (max - min) * r.nextDouble();
+    }
+}
