@@ -28,15 +28,15 @@ public class BeansConfiguration {
     }
     
     @Bean
-    @Scope("prototype")
-    public Score scorePrototype() {
-        return new Score(0, "I'm a prototype bean");
+    @Scope("singleton")
+    public Integer turnGeneralSingleton() {
+        return new Integer(0);
     }
     
     @Bean
     @Scope("prototype")
-    public int turnPrototype() {
-        return 0;
+    public Integer turnPrototype() {
+    	return new Integer(0);
     }
 
 }
