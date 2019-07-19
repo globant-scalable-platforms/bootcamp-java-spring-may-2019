@@ -1,7 +1,6 @@
 package com.globant.bootcamp.spring.springcore.controller;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -13,38 +12,67 @@ import com.globant.bootcamp.spring.springcore.domain.Score;
 
 @RestController
 public class StageTwoController {
+	
+	private static int MIN_RANDOM = 0;
+	private static int MAX_RANDOM = 5;
     
-    @Autowired
+	@Autowired
     @Qualifier(value="scoreSingleton")
-    private Score scoreTotal;
+    private Score turnsGeneral;
     
     @Autowired
     @Qualifier(value="scoreSingletonPlayer1")
-    private Score scoreStage;
+    private Score playerOne;
     
     @Autowired
     @Qualifier(value="scoreSingletonPlayer2")
-    private Score scoreStage2;
+    private Score playerTwo;
     
     @Autowired
     @Qualifier(value="turnPrototype")
-    private int turn;
+    private Integer turn;
     
     @RequestMapping(value="/stage-two")
-    public List<Score> getScopes() {
+    public String getScopes() {
     	
     	if(turn < 3) {
-    		final List<Score> result = new ArrayList<>();
-            scoreTotal.setCount(scoreTotal.getCount()+1);
-            scoreStage2.setCount(scoreStage2.getCount()+1);
+    		StringBuilder mensaje = new StringBuilder();
+    		turnsGeneral.setCount(turnsGeneral.getCount()+1);
+    		int score = generateRandom(MIN_RANDOM, MAX_RANDOM);
+    		playerTwo.setCount(playerTwo.getCount()+score);
             turn = turn + 1;
-            result.add(scoreTotal);
-            result.add(scoreStage2);
             
-            return result;
+            mensaje.append("Player 2 gets "+score+", current score: "+playerTwo.getCount());
+            
+            if(turnsGeneral.getCount() == 6) {
+        		if (playerOne.getCount() > playerTwo.getCount()) {
+            		mensaje.append("\nPlayer 1 has won with a score of: "+playerOne.getCount());
+            	} else if (playerTwo.getCount() > playerOne.getCount()) {
+            		mensaje.append("\nPlayer 2 has won with a score of: "+playerTwo.getCount());
+            	} else {
+            		mensaje.append("\nthe two players had the same points: "+playerOne.getCount());
+            	}
+        	}
+            return mensaje.toString();
     	}
     	
-    	return null;
+    	if(turnsGeneral.getCount() == 6) {
+    		if (playerOne.getCount() > playerTwo.getCount()) {
+        		return "Player 1 has won with a score of: "+playerOne.getCount();
+        	} else if (playerTwo.getCount() > playerOne.getCount()) {
+        		return "Player 2 has won with a score of: "+playerTwo.getCount();
+        	} else {
+        		return "the two players had the same points: "+playerOne.getCount();
+        	}
+    	}
+    	
+    	return "Player 2 doesn´t have more turns. Player 2 score: "+playerTwo.getCount();
         
-    }    
+    }
+    
+    public int generateRandom(final int min, final int max) {
+    	Random r = new Random();
+		return r.nextInt((max - min) + 1) + min;
+    }
+    
 }
