@@ -6,7 +6,6 @@ package com.globant.bootcamp.functional.functional.katas.templateMethodPattern;
 public class TemplateCalculator {
 	
     public Integer executeOperation(Integer a, Integer b, TemplateCalculatorOperation operation) {
-    	
         final Integer result = operation.doOperation(a, b);
 
         return result;
